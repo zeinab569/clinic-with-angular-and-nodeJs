@@ -1,0 +1,77 @@
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+
+<div class="row">
+    <div class="row mt-4">
+      <h4 class="text-info mx-4">Eyes Doctors(deptId=8 ^_^)</h4>
+      <div class="rowposter mt-3 p-2">
+          <div class="col-md-6 col-lg-4 item" *ngFor="let n of filterDoctorWithDept(doctors,8)">
+              <div class="box">
+                  <img class="rounded-circle" src="../../../assets/heart.png" width="70px">
+                  <h3 class="name">{{n.fullName}}</h3>
+                  <p class="title">{{n.departmentId}}</p>
+                 
+                  <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                  <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                  <button type="button" class="btn btn-outline-info my-3" style="width: 60px;"  >Info</button>
+
+              </div>
+          </div>
+      </div>
+    </div> 
+                               
+
+ <div class="row mt-4">
+        <h4 class="text-info mx-4">dentist Doctors(deptId=2 ^_^)</h4>
+        <div class="rowposter mt-3 p-2">
+            <div class="col-md-6 col-lg-4 item" *ngFor="let n of filterDoctorWithDept(doctors,2)">
+                <div class="box">
+                    <img class="rounded-circle" src="../../../assets/heart.png" width="70px">
+                    <h3 class="name">{{n.fullName}}</h3>
+                    <p class="title">{{n.departmentId}}</p>
+                   
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </div>                  
+    <div class="row mt-4">
+        <h4 class="text-info mx-4">dentist Doctors(deptId=1 ^_^)</h4>
+        <div class="rowposter mt-3 p-2">
+            <div class="col-md-6 col-lg-4 item" *ngFor="let b of filterDoctorWithDept(doctors,1)">
+                <div class="box">
+                    <img class="rounded-circle" src="../../../assets/heart.png" width="70px">
+                    <h3 class="name">{{b.fullName}}</h3>
+                    <p class="title">{{b.departmentId}}</p>
+                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </div>                 
+
+
+</div> 
+
+    
+             
+
+
+
+

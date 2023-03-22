@@ -1,0 +1,127 @@
+/* *{
+  margin: 0;
+  margin-right: 0;
+  padding: 0;
+} */
+.team-boxed {
+    color:#313437;
+    background-color:#1c7dad;
+  }
+  
+  .team-boxed p {
+    color:#7d8285;
+  }
+  
+  .team-boxed h2 {
+    font-weight:bold;
+    margin-bottom:40px;
+    padding-top:40px;
+    color:inherit;
+  }
+  
+  @media (max-width:767px) {
+    .team-boxed h2 {
+      margin-bottom:25px;
+      padding-top:25px;
+      font-size:24px;
+    }
+  }
+  
+  /* .team-boxed .intro {
+    font-size:16px;
+    max-width:500px;
+    margin:0 auto;
+  } */
+  
+  .team-boxed .intro p {
+    margin-bottom:0;
+  }
+  
+  /* .team-boxed .people {
+    padding:50px 0;
+  } */
+/*   
+  .team-boxed .item {
+    text-align:center;
+  } */
+  
+  .item .box {
+    text-align:center;
+    padding:30px;
+    background-color:#cefaff;
+    margin-bottom:30px;
+  }
+  
+  .team-boxed .item .name {
+    font-weight:bold;
+    margin-top:28px;
+    margin-bottom:8px;
+    color:inherit;
+  }
+  
+  .team-boxed .item .title {
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#d0d0d0;
+    letter-spacing:2px;
+    font-size:13px;
+  }
+  
+  /* .team-boxed .item .description {
+    font-size:15px;
+    margin-top:15px;
+    margin-bottom:20px;
+  } */
+  
+  /* .team-boxed .item img {
+    max-width:160px;
+  } */
+  
+  /* .team-boxed .social {
+    font-size:18px;
+    color:#a2a8ae;
+  } */
+  
+  /* .team-boxed .social a {
+    color:inherit;
+    margin:0 10px;
+    display:inline-block;
+    opacity:0.7;
+  } */
+  
+  .team-boxed .social a:hover {
+    opacity:1;
+  }
+  
+.rowposter{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.rowimg
+{
+    max-height: 150px;
+    object-fit: contain;
+    width: 100%;
+    box-sizing: content-box;
+    transition: transform 450ms;
+     margin-right: 7px; 
+}
+.rowimg:hover{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+.largeposter{
+    max-height: 100px;
+}
+.rowposter::-webkit-scrollbar
+{
+    display: none;
+  
+}
+h4{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+  

@@ -1,0 +1,102 @@
+.gradient-custom {
+    
+    /* fallback for old browsers */
+    background: #f6d365;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+    }
+
+.main-content{
+    position: relative;
+    top: -60px;
+    margin: 30px;
+    font-size: 14px;
+   
+}
+.card{
+    box-shadow: 1px 1px 7px rgb(212, 209, 209);
+}
+.row{
+    justify-content: space-between;
+  
+}
+#mm{
+    width: 100%;
+    height: 150px;
+}
+
+label{
+    margin: 5px;
+}
+.avatar{
+        width: 40%;
+        height:30%;
+        border-radius: 50%;
+        position: relative;
+        top: -40px;
+        left: 30%;
+        box-shadow: 0px 0px 5px #686867;
+    }
+input{
+    border-color: #cbeff8;
+    border-radius: 20px;
+   
+}
+input:focus{
+    border-color: rgb(239, 167, 115);
+    box-shadow: none;
+}
+h3{
+    color: rgb(237, 167, 5);
+    font-weight: 500;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card-header{
+    background-color: #ffffff;
+    border: none;
+ 
+}
+h5{
+    /* margin-top:-40px; */
+    color: rgb(237, 167, 5);
+}
+a{
+    text-decoration: none;
+}
+.btn-neutral{
+    color:  rgb(237, 167, 5);
+}
+.btn-neutral:focus{
+   color: #ffffff;
+   border-color: #ffffff;
+}
+#more{
+    border-style:outset;
+    border-color: #cbeff8;
+}
+#more:focus{
+
+    border-color: rgb(237, 167, 5);
+    border-style:solid;
+    box-shadow: none;
+ }
+ .sb{
+    margin-bottom: 3%;
+    background-color: #ffffff;
+    border-color:rgb(237, 167, 5) ;
+    border-style: solid;
+    position: relative;
+    left: 73%;
+   
+ }
+ .sb:focus{
+
+    background-color:rgb(237, 167, 5) ;
+    color: #ffffff;
+    justify-content: right;
+ }
