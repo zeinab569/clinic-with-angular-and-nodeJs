@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DoctorboardModule } from './doctorboard/doctorboard.module';
 import { CommonModule } from '@angular/common';
+
 //import { CreateEmployeeComponent } from './adminboard/create-employee/create-employee.component';
 
 
