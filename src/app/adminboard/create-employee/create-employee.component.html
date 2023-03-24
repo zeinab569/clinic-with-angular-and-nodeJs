@@ -1,5 +1,34 @@
-<div class="container">
-    <header class="jumbotron">
-      <p>{{ content }}</p>
-    </header>
-  </div>
+<div class="alert alert-info">
+ 
+  <ul>
+      <li>TheID<input type="text" [(ngModel)]="employee._id"></li>
+      <li>Name<input type="text" [(ngModel)]="employee.name"></li>
+      <li>userName<input type="text" [(ngModel)]="employee.user_name"></li>
+      <li> role
+          <select [(ngModel)]="employee.user_role" name="thes" id="sel">
+           <option>admin</option>
+           <option>receptionist</option>
+           <option >accountant</option>
+           <option >pharmacist</option>
+           </select>
+      </li>
+      <li>Phone <input type="text"  [(ngModel)]="employee.phoneno" ></li>
+      <li>Email <input type="text"  [(ngModel)]="employee.email" ></li>
+      <li>Password <input type="text"  [(ngModel)]="employee.password" ></li>
+      <li>Salary <input type="text"  [(ngModel)]="employee.salary" ></li>
+      <li> role
+        <select [(ngModel)]="employee.gender" name="thes" id="sel">
+         <option>male</option>
+         <option>female</option>
+         </select>
+    </li>
+      <li>workHours <input type="text"  [(ngModel)]="employee.workHours" ></li>
+      
+      <li>Age <input type="text"  [(ngModel)]="employee.age" ></li>
+      <li>clinictId <input type="text"  [(ngModel)]="employee.clinictId" ></li>
+      <li>DepartmentId <input type="text"  [(ngModel)]="employee.dept_id" ></li>
+      
+  </ul>
+  
+ <button (click)="save()" class="btn btn-danger"> Save</button>
+</div>

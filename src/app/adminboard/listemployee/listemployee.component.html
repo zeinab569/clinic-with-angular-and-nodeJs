@@ -1,0 +1,43 @@
+<table class="table table-striped">
+    <thead class="text-primary">
+      <tr  class="text-info">
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">user_name</th>
+        <th scope="col">User Role</th>
+        <th scope="col">phone</th>
+        <th scope="col">Email</th>
+        <th scope="col">salary</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Workhours</th>
+        <th scope="col">Image</th>
+        <th scope="col">Age</th>
+        <th scope="col"> Delete</th>
+        <th scope="col">Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let item of employees">
+        <td>{{item._id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.user_name}}</td>
+        <td>{{item.user_role}}</td>
+        <td>{{item.phoneno}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.salary}}</td>
+        <td>{{item.gender}}</td>
+        <td>{{item.workHours}}</td>
+        <td>{{item.employeeImage}}</td>
+        <td>{{item.age}}</td>
+        <td>
+          <button class="btn btn-primary text-light mx-3 rounded " (click)="delete(item._id)">Delete</button>
+       </td>
+       <td>
+        <a class="btn btn-primary text-light  rounded">update</a>
+       </td>
+        
+      
+      </tr>
+    </tbody>
+  </table>
+

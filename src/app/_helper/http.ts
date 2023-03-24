@@ -3,8 +3,8 @@ import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest, HTTP_INTERCEPTORS
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-import { StorageService } from '../_services/storage.service';
-import { EventbusService } from '../_services/eventbus.service';
+import { StorageService } from '../_sevices/storage.service';
+import { EventbusService } from '../_sevices/eventbus.service';
 import { Event } from '../_models/event';
 
 @Injectable()
