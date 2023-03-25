@@ -9,6 +9,7 @@ import { AddDoctorComponent } from './add-doctor/add-doctor.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CreateDoctorComponent } from './create-doctor/create-doctor.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProfileComponent,
     DoctorcardsComponent,
     DashboardComponent,
-    AddDoctorComponent
+    AddDoctorComponent,
+    CreateDoctorComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     ProfileComponent,
     DoctorcardsComponent,
-    AddDoctorComponent
+    AddDoctorComponent,
+    CreateDoctorComponent
   ],
 })
 export class DoctorboardModule { }

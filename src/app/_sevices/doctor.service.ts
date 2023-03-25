@@ -15,21 +15,28 @@ export class DoctorService {
     // });
   }
   
-    getAll(){
-      return this.http.get<Doctor[]>(this.baseUrl);//don't forget to transfer return data to array
-     
-    }
-  
-    deleteAll(){return this.http.delete(this.baseUrl);}
-  
-    getById(){ return this.http.get<Doctor>(this.baseUrl+62);}
-  
-    create(data:any){ return this.http.post(this.baseUrl,data);}
-  
-    update(id:any,data:any){ return this.http.put(`${this.baseUrl}/${id}`,data);}
-  
-    deleteById(id:any){return this.http.delete(`${this.baseUrl}/${id}`);}
-    // 
-    findBySalary(fullName:any){return this.http.get<Doctor[]>(this.baseUrl+'?'+fullName+'='+"455")}
-  
+  getAll(){
+    return this.http.get<Doctor[]>(this.baseUrl);//don't forget to transfer return data to array
+   
+  }
+
+  deleteAll(){return this.http.delete(this.baseUrl);}
+
+  getById(){ return this.http.get<Doctor>(this.baseUrl+62);}
+
+  create(data:any){ return this.http.post(this.baseUrl,data);}
+
+  // update(id:any,data:any){ return this.http.put(`${this.baseUrl}/${id}`,data);}
+  edit(doc:Doctor){
+    return this.http.patch(this.baseUrl+doc._id,doc);
+   }
+  deleteById(id:Number){return this.http.delete(this.baseUrl+id);}
+  // 
+  findBySalary(fullName:any){return this.http.get<Doctor[]>(this.baseUrl+'?'+fullName+'='+"455")}
+
+
+  add(doc:Doctor){
+    return this.http.post<Doctor>(this.baseUrl,doc)
+    
+  }
 }

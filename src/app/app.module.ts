@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DoctorboardModule } from './doctorboard/doctorboard.module';
 import { CommonModule } from '@angular/common';
 import { AdminboardModule } from './adminboard/adminboard.module';
+import { httpInterceptorProviders } from './_helper/http';
 
 
 
@@ -32,7 +33,7 @@ import { AdminboardModule } from './adminboard/adminboard.module';
     AdminboardModule,
     CommonModule
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
