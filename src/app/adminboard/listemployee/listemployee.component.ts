@@ -27,7 +27,9 @@ export class ListemployeeComponent {
   
   ngOnInit(){
     this.employeeservices.getAll().subscribe(data=>{
+        console.log(data);
         this.employees=data;
+        
     })
   }
 }
