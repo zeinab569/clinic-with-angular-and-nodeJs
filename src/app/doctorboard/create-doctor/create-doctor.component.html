@@ -1,0 +1,28 @@
+<div class="alert alert-info">
+ 
+    <ul>
+        <!-- <li>TheID<input type="text" [(ngModel)]="currentDoc._id"></li> -->
+        <li>Name<input type="text" [(ngModel)]="currentDoc.fullName"></li>
+        <li>userName<input type="text" [(ngModel)]="currentDoc.userName"></li>
+        <li>Email <input type="text"  [(ngModel)]="currentDoc.email" ></li>
+
+        <li>Phone <input type="text"  [(ngModel)]="currentDoc.phoneNumber" ></li>
+        <!-- <li>Password <input type="text"  [(ngModel)]="currentDoc.password" ></li> -->
+        <li>Salary <input type="text"  [(ngModel)]="currentDoc.salary" ></li>
+        <!-- <li> gender
+          <select [(ngModel)]="currentDoc.gender" name="thes" id="sel">
+           <option>male</option>
+           <option>female</option>
+           </select>
+      </li> -->
+        <li>deptId <input type="text"  [(ngModel)]="currentDoc.departmentId" ></li>
+        
+        <!-- <li>Age <input type="text"  [(ngModel)]="currentDoc.age" ></li> -->
+        <!-- <li>clinictId <input type="text"  [(ngModel)]="currentDoc.doctor_start" ></li> -->
+        <!-- <li>DepartmentId <input type="text"  [(ngModel)]="currentDoc.max_appoints" ></li> -->
+        
+    </ul>
+    
+   <button (click)="save()" class="btn btn-danger"> Save</button>
+  </div>
+  
