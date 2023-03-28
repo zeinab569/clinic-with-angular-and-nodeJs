@@ -1,0 +1,130 @@
+
+<!-- <div class="alert alert-info"> -->
+ 
+  <!-- <ul> -->
+      <!-- <li>TheID<input type="text" [(ngModel)]="currentDoc._id"></li> -->
+      <!-- <li>id<input type="text" [(ngModel)]="mh._id"></li> -->
+      <!-- <li>medicinesbefore<input type="text" [(ngModel)]="mh.medicinesbefore.name"></li>
+      <li>quantity <input type="text"  [(ngModel)]="mh.medicinesbefore.quantity" ></li> -->
+
+      <!-- <li>bloodType <input type="text"  [(ngModel)]="mh.bloodType" ></li> -->
+      <!-- <li>Password <input type="text"  [(ngModel)]="currentDoc.password" ></li> -->
+      <!-- <li>fullName <input type="text"  [(ngModel)]="mh.doctorId.fullName" ></li> -->
+      <!-- <li> gender
+        <select [(ngModel)]="currentDoc.gender" name="thes" id="sel">
+         <option>male</option>
+         <option>female</option>
+         </select>
+    </li> -->
+      <!-- <li>deptId <input type="text"  [(ngModel)]="currentDoc.departmentId" ></li> -->
+      
+      <!-- <li>Age <input type="text"  [(ngModel)]="currentDoc.age" ></li> -->
+      <!-- <li>clinictId <input type="text"  [(ngModel)]="currentDoc.doctor_start" ></li> -->
+      <!-- <li>DepartmentId <input type="text"  [(ngModel)]="currentDoc.max_appoints" ></li> -->
+      
+  <!-- </ul> -->
+  
+ <!-- <button (click)="save()" class="btn btn-danger"> Save</button>
+</div> -->
+
+  <!-- <div role="main" class="form-all"> -->
+<div role="main" class="main" >
+  <ul  type="none">
+      <!-- first container for image -->
+      
+      <li >
+          <div class="row">
+              
+                  <div class="col col-lg-6" id="rowText">
+                      <h2 id="header_1" class="text-info" > Patient Medical History</h2>
+                      <div id="subHeader_1">Dr. Xander M. Spencer</div>
+                  </div>
+                  <div class="col col-lg-6">
+                      <!-- <img src="https://www.jotform.com/uploads/utkuyildirim/form_files/dr.5f327cf9785fa8.05675056.5f48f8215276c2.83332452.png" -->
+                      <img src="../../../assets/doc1.jpg" width="100%" height="270px"
+                          alt="New Patient Enrollment"  class="header-logo-right">
+                  </div>
+              
+          </div>
+      </li>
+      <!-- for names -->
+      <li  >
+          <label class="one"> Name </label>
+              <div>
+                  <label >ID Medicla</label>
+                  <input  [(ngModel)]="mh._id" >
+                  <label >ID patient</label>
+                  <input  [(ngModel)]="mh.patientId ">
+
+                  <label>P firstName</label>
+                  <input  value=""   [(ngModel)]="mh.patientId.firstName">
+                  <!-- <label >quantity </label>
+                  <input  value="" > -->
+                  <label>doctor name</label>
+                  <input  value=""   [(ngModel)]="mh.doctorId.fullName">
+                  
+              </div>
+      </li>
+      <!-- gender -->
+      <li  >
+          <label class="one" > Gender </label>
+              <select [(ngModel)]="mh.patientId.gender" >
+                  <option value="">Please Select</option>
+                  <option value="male">male</option>
+                  <option value="female">female</option>
+                  <!-- <option value="N/A">N/A</option> -->
+              </select>
+         
+      </li>
+      <!-- phone number -->
+      <li >
+          <label class="one " > Contact Number: </label>
+       <input  [(ngModel)]="mh.patientId.phoneNumber" placeholder="(000) 000-0000">
+        
+      </li>
+      <!-- email -->
+      <li >
+          <label class="one"> E-mail </label>
+           <input   [(ngModel)]="mh.patientId.email" placeholder="ex: myname@example.com">
+      </li>
+      <hr>
+      <!-- medicinesbefore -->
+      <li >
+          <label class="one" > medicinesbefore  name </label>
+          <input placeholder="medcine name"  [(ngModel)]="mh.medicinesbefore.name">
+          <input placeholder="quantity" value="" style="width: 15%;"  [(ngModel)]="mh.medicinesbefore.quantity">
+          <label  >from</label>
+          <input type="date"  [(ngModel)]="mh.medicinesbefore.from" >
+          <label  >to</label>
+          <input type="date"  [(ngModel)]="mh.medicinesbefore.to" >
+          
+      </li>
+      <!-- bloodType -->
+      <li >
+          <label class="one"> Blood Type </label>
+          <div> 
+              <select  [(ngModel)]="mh.bloodType" >
+                  <option value="AB+">AB+</option>
+                  <option value="A+" >A+</option>
+                  <option value="B+" >B+</option>
+                  <option value="O+" >O+</option>
+                  <option value="A-" >A-</option>
+                  <option value="B-" >B-</option>
+                  <option value="O-" >O-</option>
+                  <option value="AB-">AB-</option>
+           </select> </div>
+      </li>
+      <hr>
+
+      <li >
+          <label class="one" > If yes, please list it here </label>
+           <textarea id="input_22" style="width:60%;height:163px" >
+            
+          </textarea> 
+      </li>
+      <li >
+          <button  class="btn btn-outline-info px-4 py-2 " (click)="save()">save</button>
+      </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>

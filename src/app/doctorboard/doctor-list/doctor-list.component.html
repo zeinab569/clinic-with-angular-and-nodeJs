@@ -1,13 +1,9 @@
 
-
-<!-- <div *ngFor="let n of doctors"> -->
-   <!-- <p *ngFor="let n of doc"> {{n.fullName}}</p> -->
-   <!-- <p> {{n.salary}}</p>
-</div> -->
-<table class="table table-hover table-dark">
-    <thead class="text-info">
+<table class="table table-hover ">
+    <thead class="text-info ">
       <tr>
         <th scope="col">#</th>
+        <th scope="col">ID</th>
         <th scope="col">Full Name</th>
         <th scope="col">Email</th>
         <th scope="col">Delete</th>
@@ -15,13 +11,17 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let n of doc">
-        <th scope="row">{{n._id}}</th>
+      <tr *ngFor="let n of doc  let i='index'">
+      
+        <th scope="row">{{i}}</th>
+        <td>{{n._id}}</td>
         <td>{{n.fullName}}</td>
         <td>{{n.email}}</td>
-        <td><button (click)= "delete(n._id)" type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button></td>
+        <td><button (click)="delete(n._id)" type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button></td>
         <td><button  routerLink="editD" (click)="save(n)" type="button" class="btn btn-outline-info"><i class="fa fa-edit"></i></button></td>
-        <td><button  (click)="Show()" type="button" class="btn btn-outline-info"><i class="fa fa-edit"></i>ssss</button></td>
+        
+        
+        <!-- <td><button  (click)="Show()" type="button" class="btn btn-outline-info"><i class="fa fa-edit"></i>ssss</button></td> -->
       </tr>
     </tbody>
   </table>
@@ -30,12 +30,12 @@
  <!-- main content  -->
  
  <div class="child_div" *ngIf="flag">
-    <!-- <router-outlet></router-outlet> -->
     <div class="alert alert-danger text-light">
-
       <div >
        <label > ID</label> 
       <input type="text" title="ID" [(ngModel)]= "currentDoc._id">
+       <label > Age</label> 
+      <input type="text" title="ID" [(ngModel)]= "currentDoc.userName">
       <label > Name</label> 
        <input type="text" title="name" [(ngModel)]= "currentDoc.fullName"><br>
        <button class="bg-dark text-light mx-3 rounded" (click)="update(currentDoc)" >SAVE Changes</button>
@@ -43,8 +43,6 @@
   </div>
   </div>
   
-  <!-- main content  -->
-
-
-
-<!-- <a href="contact.html" class="nav-link" data-toggle="modal" data-target="#modalRequest"><span>Make an Appointment</span></a> -->
+  
+  
+   <!-- main content  -->

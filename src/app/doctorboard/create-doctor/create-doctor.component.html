@@ -1,28 +1,87 @@
-<div class="alert alert-info">
+<!-- <div class="alert alert-info">
  
     <ul>
-        <!-- <li>TheID<input type="text" [(ngModel)]="currentDoc._id"></li> -->
         <li>Name<input type="text" [(ngModel)]="currentDoc.fullName"></li>
         <li>userName<input type="text" [(ngModel)]="currentDoc.userName"></li>
         <li>Email <input type="text"  [(ngModel)]="currentDoc.email" ></li>
 
         <li>Phone <input type="text"  [(ngModel)]="currentDoc.phoneNumber" ></li>
-        <!-- <li>Password <input type="text"  [(ngModel)]="currentDoc.password" ></li> -->
         <li>Salary <input type="text"  [(ngModel)]="currentDoc.salary" ></li>
-        <!-- <li> gender
-          <select [(ngModel)]="currentDoc.gender" name="thes" id="sel">
-           <option>male</option>
-           <option>female</option>
-           </select>
-      </li> -->
+
+    
         <li>deptId <input type="text"  [(ngModel)]="currentDoc.departmentId" ></li>
-        
-        <!-- <li>Age <input type="text"  [(ngModel)]="currentDoc.age" ></li> -->
-        <!-- <li>clinictId <input type="text"  [(ngModel)]="currentDoc.doctor_start" ></li> -->
-        <!-- <li>DepartmentId <input type="text"  [(ngModel)]="currentDoc.max_appoints" ></li> -->
-        
+
     </ul>
     
    <button (click)="save()" class="btn btn-danger"> Save</button>
   </div>
-  
+   -->
+
+
+  <div class="main" >
+    <div class="title">New Doctor</div>
+    <!-- <div class="subtitle">Let's create your account!</div> -->
+    <div class="input-container ic1">
+      <input id="firstname" class="input" type="text" placeholder="fullName" [(ngModel)]="currentDoc.fullName" />
+      <div class="cut"></div>
+      <label for="firstname" class="placeholder" >First name</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="lastname" class="input" type="text" placeholder=" userName" [(ngModel)]="currentDoc.userName"/>
+      <div class="cut"></div>
+      <label for="lastname" class="placeholder">user name</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="lastname" class="input" type="text" placeholder=" userName" [(ngModel)]="currentDoc.password"/>
+      <div class="cut"></div>
+      <label for="lastname" class="placeholder">user name</label>
+    </div>
+    <div class="input-container ic2">
+      <input id="email" class="input" type="text" placeholder=" email" [(ngModel)]="currentDoc.email" />
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder">Email/>
+      </label>
+    </div>
+    <div class="input-container ic2">
+      <input id="email" class="input" type="text" placeholder=" email" [(ngModel)]="currentDoc.address" />
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder"><address></address>/>
+      </label>
+    </div>
+    <div class="input-container ic2">
+      <input id="email" class="input" type="text" placeholder=" phone"  [(ngModel)]="currentDoc.phoneNumber" />
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder">phoneNumber/>
+      </label>
+    </div>
+    <div class="input-container ic2">
+      <input id="email" class="input" type="text" placeholder=" phone"  [(ngModel)]="currentDoc.age" />
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder">age/>
+      </label>
+    </div>
+    <div class="input-container ic2">
+      <input id="email" class="input" type="text" placeholder="nn" [(ngModel)]="currentDoc.salary" />
+      <div class="cut cut-short"></div>
+      <label for="email" class="placeholder">salary/>
+      </label>
+    </div>
+
+    <div class="input-container ic1">
+      <input id="firstname" class="input" type="text" placeholder="fullName" [(ngModel)]="currentDoc.departmentId" />
+      <div class="cut"></div>
+      <label for="firstname" class="placeholder" >deptId</label>
+    </div>
+    <div class="input-container ic1">
+      <input id="firstname" class="input" type="text" placeholder="fullName" [(ngModel)]="currentDoc.clinicId" />
+      <div class="cut"></div>
+      <label for="firstname" class="placeholder" >deptId</label>
+    </div>
+    <div class="input-container ic1">
+      <input id="firstname" class="input" type="text" placeholder="fullName" [(ngModel)]="currentDoc.prescreption" />
+      <div class="cut"></div>
+      <label for="firstname" class="placeholder" >deptId</label>
+    </div>
+    <!-- <button (click)="save()" class="btn btn-danger"> Save</button> -->
+    <button class="btn btn-outline-info my-2 px-5 text-light" (click)="save()">Save</button>
+  </div>

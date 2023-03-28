@@ -11,10 +11,11 @@
     }
 
 .main-content{
-    position: relative;
-    top: -60px;
-    margin: 30px;
+    /* position: relative;
+    top: -60px; */
+    /* margin: 30px; */
     font-size: 14px;
+   
    
 }
 .card{
@@ -38,7 +39,7 @@ label{
         border-radius: 50%;
         position: relative;
         top: -40px;
-        left: 30%;
+        /* left: 30%; */
         box-shadow: 0px 0px 5px #686867;
     }
 input{
@@ -47,11 +48,11 @@ input{
    
 }
 input:focus{
-    border-color: rgb(239, 167, 115);
+    border-color: rgb(5, 237, 156);
     box-shadow: none;
 }
 h3{
-    color: rgb(237, 167, 5);
+    color: rgb(5, 237, 156);
     font-weight: 500;
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -61,15 +62,15 @@ h3{
     border: none;
  
 }
-h5{
-    /* margin-top:-40px; */
-    color: rgb(237, 167, 5);
-}
+/* h5{
+
+    color: rgb(5, 198, 237);
+} */
 a{
     text-decoration: none;
 }
 .btn-neutral{
-    color:  rgb(237, 167, 5);
+    color: rgb(5, 202, 237) ;
 }
 .btn-neutral:focus{
    color: #ffffff;
@@ -81,22 +82,25 @@ a{
 }
 #more:focus{
 
-    border-color: rgb(237, 167, 5);
+    border-color: rgb(5, 237, 156);
     border-style:solid;
     box-shadow: none;
  }
  .sb{
     margin-bottom: 3%;
     background-color: #ffffff;
-    border-color:rgb(237, 167, 5) ;
+    border-color:rgb(5, 202, 237) ;
     border-style: solid;
-    position: relative;
-    left: 73%;
+    /* position: relative; */
+    margin-left: 2%;
+    width: 20%;
+    font-size: large;
+    color:rgb(5,202,237);
    
  }
  .sb:focus{
 
-    background-color:rgb(237, 167, 5) ;
+    background-color:rgb(5, 202, 237) ;
     color: #ffffff;
     justify-content: right;
  }

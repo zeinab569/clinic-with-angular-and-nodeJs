@@ -1,6 +1,11 @@
 body{
     background:rgb(255, 244, 244);
 }
+#main1{
+    background-color: white;
+    box-shadow:5px 5px 10px  rgb(255, 255, 255);
+    /* background-color: #ded307; */
+}
 .profile-card{
             position:relative;
             overflow: hidden;
@@ -162,10 +167,10 @@ body{
     background: rgb(40, 68, 92);
     
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right bottom, rgb(40, 68, 92), rgb(36, 23, 107));
+    background: -webkit-linear-gradient(to right bottom, rgb(111, 166, 214), rgb(92, 62, 143));
     
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right bottom,  rgb(40, 68, 92), rgb(36, 23, 107));
+    background: -webkit-linear-gradient(#6cbcc5, #114d59ce);
    
     height: 100%;
     border-right: 1px solid rgb(128, 128, 128);
@@ -227,6 +232,7 @@ ul{
     margin-top: 100px;
     padding: 10px 18px;
     transition: margin-left .5s;
+   
 }
 /* main-content */
 

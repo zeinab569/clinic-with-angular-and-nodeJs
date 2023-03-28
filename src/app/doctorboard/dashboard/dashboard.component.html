@@ -2,9 +2,9 @@
 
 
 <!-- topnavbar -->
-<div class="topnav shadow p-1">
-    <a>Admin Dashboard</a>
-    <span class="menu" (click)="openNav(true)"><i class="bi bi-list" style="color: aqua;"></i></span>
+ <div class="topnav shadow p-1" id="main1">
+    <a href="/home" class="nav-link text-info" routerLink="home">Home </a>
+    <span class="menu" (click)="openNav(true)"><i class="fas fa-bars" style='color:rgb(24, 223, 206)'></i></span>
   </div>
   <!-- topnavbar -->
   
@@ -15,12 +15,14 @@
         <li><a href="#" routerLink="addDoctor"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
         <li><a  routerLink="profile"><i class="bi bi-card-text"></i> Profile</a></li>
         <li><a  routerLink="createDoctor"><i class="bi bi-card-text"></i> create Doctor</a></li>
-        <li>
+        <li><a  routerLink="createMH"><i class="bi bi-card-text"></i> create MHistory</a></li>
+        <li><a  routerLink="doctorList"><i class="bi bi-person-gear"></i> User</a></li>
+        <li><a  routerLink="patientList"><i class="bi bi-person-gear"></i> Patient</a></li>
+        <li><a  routerLink="Hist"><i class="bi bi-person-gear"></i> History</a></li>
+        <li><a  routerLink="doctorcard"><i class="bi bi-person-gear"></i> doctor cards</a></li>
+        <!-- <li>
             <a ><i class="bi bi-bag"></i> Products <i class="bi bi-arrow-right icon"></i></a>
-            <!-- <ul class="dropdow-container">
-                <li><a href="#">Link1</a></li>
-                <li><a href="#">Link2</a></li>
-            </ul> -->
+          
         </li>
         <li>
             <a href="#"><i class="bi bi-tag"></i> Categories <i class="bi bi-arrow-right icon"></i></a>
@@ -28,8 +30,8 @@
                 <li><a href="#">Link1</a></li>
                 <li><a href="#">Link2</a></li>
             </ul>
-        </li>
-        <li><a routerLink="/users"><i class="bi bi-person-gear"></i> User</a></li>
+        </li> -->
+       
         <li><a href="#"><i class="bi bi-box-arrow-left"></i> Logout</a></li>
   
     </ul>

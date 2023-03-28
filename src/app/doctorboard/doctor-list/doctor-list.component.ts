@@ -5,17 +5,15 @@ import { DoctorService } from 'src/app/_sevices/doctor.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-add-doctor',
-  templateUrl: './add-doctor.component.html',
-  styleUrls: ['./add-doctor.component.css']
+  selector: 'app-doctor-list',
+  templateUrl: './doctor-list.component.html',
+  styleUrls: ['./doctor-list.component.css']
 })
-export class AddDoctorComponent {
-  constructor(public doctorService:DoctorService,public activatedRoute:ActivatedRoute,public router:Router){}
+export class DoctorListComponent {
+  constructor(public doctorService:DoctorService,activatedRoute:ActivatedRoute,public router:Router){}
   doc: Doctor[]=[];
   flag=false;
-  currentDoc:Doctor=new Doctor(0,"","","","","","","",0,0,"",0,0,0,0,0,"","");
-
-
+  currentDoc:Doctor=new Doctor(0,"","","","","","","",0,0,"",0,0,0,0,0,"","","","");
   delete(id:Number){
     if(confirm('are you sure?!')){
       this.doctorService.deleteById(id).subscribe(a=>{
@@ -41,13 +39,12 @@ Show(){
   })
   // Swal.fire("Good job!", "...", "success")
 }
-
-
 save(current:Doctor){
    this.flag=true;
    this.currentDoc=current;
    console.log(this.currentDoc);
 }
+
 update(current:Doctor){
   console.log(this.doc);
   this.doctorService.edit(current).subscribe(data=>{
@@ -56,13 +53,12 @@ update(current:Doctor){
           console.log(data);
         })
  }
-
-
   ngOnInit(){
-    // this.doctorService.findBySalary(2000).subscribe(data=>{ this.doctors=data; console.log(this.doctors)});
-    this.doctorService.findBySalary("manar").subscribe(data=>{
-      this.doc=data;
-    })
-  console.log(this.doc)
-   };
+    
+      this.doctorService.getAll().subscribe(data=>{
+       this.doc=data;
+        console.log(data);
+  // console.log(this.doc)
+     }); 
+    }
 }

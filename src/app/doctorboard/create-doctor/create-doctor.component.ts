@@ -14,13 +14,13 @@ export class CreateDoctorComponent {
   constructor(public doctorService:DoctorService,public activatedRoute:ActivatedRoute,public router:Router){}
 
  
-  currentDoc:Doctor=new Doctor(0,"","","","","","","",0,0,"",0,0,0,0,0,"","");
+  currentDoc:Doctor=new Doctor(0,"","","","","","","",0,0,"",0,0,0,0,0,"","","","");
 
   save(){
     
     this.doctorService.add(this.currentDoc).subscribe(data=>{
       console.log(data)
-      this.router.navigateByUrl("/addDoctor")
+      this.router.navigateByUrl("/home")
     })
   }
 

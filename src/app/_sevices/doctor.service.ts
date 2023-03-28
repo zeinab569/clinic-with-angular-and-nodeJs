@@ -22,7 +22,7 @@ export class DoctorService {
 
   deleteAll(){return this.http.delete(this.baseUrl);}
 
-  getById(){ return this.http.get<Doctor>(this.baseUrl+62);}
+  getById(){ return this.http.get<Doctor>(this.baseUrl+67);}
 
   create(data:any){ return this.http.post(this.baseUrl,data);}
 
