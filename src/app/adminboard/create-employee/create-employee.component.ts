@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Employee } from 'src/app/_models/employee';
 import { EmployeeService } from 'src/app/_sevices/employee.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-create-employee',
@@ -16,7 +17,14 @@ export class CreateEmployeeComponent  {
     
     this.employeeservice.add(this.employee).subscribe(data=>{
       console.log(data)
-      this.router.navigateByUrl("/listemployees")
+      this.router.navigateByUrl("/admin/listemployees")
+    })
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Added Successfully &#128077;',
+      showConfirmButton: false,
+      timer: 1500
     })
   }
 

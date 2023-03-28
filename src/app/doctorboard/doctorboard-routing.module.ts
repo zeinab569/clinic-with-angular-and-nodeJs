@@ -9,10 +9,11 @@ import { ProfileComponent } from './profile/profile.component';
 const routes: Routes = [
   {path:"", component:DashboardComponent,children:[
     {path:"profile",component:ProfileComponent},
-    {path:"createDoctor", component:CreateDoctorComponent},
-
+    //{path:"createDoctor", component:CreateDoctorComponent},
+    
   ]},
   {path:"doctorcard", component:DoctorcardsComponent},
+  //{path:"createDoctor", component:CreateDoctorComponent},
   {path:"addDoctor", component:AddDoctorComponent},
   {path:"doctorBoard", component:DashboardComponent},
   

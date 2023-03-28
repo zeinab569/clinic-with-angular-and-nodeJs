@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Employee } from 'src/app/_models/employee';
 import { EmployeeService } from 'src/app/_sevices/employee.service';
 import Swal from 'sweetalert2';
@@ -10,7 +11,11 @@ import Swal from 'sweetalert2';
 })
 export class ListemployeeComponent {
   employees:Employee[]=[]
-  constructor(public employeeservices:EmployeeService){}
+  employee:Employee=new Employee(0,"","","","","","",0,"",0,"",0,0,0,"")
+  flag=false;
+
+  constructor(public employeeservices:EmployeeService,public router:Router){}
+
 
   delete(id:number){
     if(confirm("are you sure")){
@@ -33,6 +38,12 @@ export class ListemployeeComponent {
     }
   }
   
+public  E2:any;
+  thedite(employee:Employee){
+    this.router.navigateByUrl("/admin/updateemployees")
+    return this.E2=employee;
+  }
+
   ngOnInit(){
     this.employeeservices.getAll().subscribe(data=>{
         console.log(data);

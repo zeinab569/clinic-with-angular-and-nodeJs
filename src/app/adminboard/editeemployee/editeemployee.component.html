@@ -1,4 +1,90 @@
-<div class="alert alert-info">
+<div role="main" >
+  
+  <ul class=" page-section " type="none">
+      <!-- first container for image -->
+          <div class="row">
+              
+                  <div class="col col-lg-6">
+                      <h2 id="header_1" class="form-header" data-component="header"> Edite Employee</h2>
+                  </div>
+                  
+                  <div class="col col-lg-6">
+                    <img src="../../assets/dm.jpg"
+                        alt="New Patient Enrollment"  class="header-logo-right">
+                </div>
+                
+          </div>
+</ul>
+
+<div class="themain">
+  <div class="alert primary">
+    <ul>
+         <div> 
+           <label>TheID</label><input type="text" [(ngModel)]="employee._id"> 
+           <label>Name</label><input type="text" [(ngModel)]="employee.name">  
+           <label>userName</label><input type="text" [(ngModel)]="employee.user_name">
+         </div>
+        <div>
+          <label>Phone</label> <input type="text"  [(ngModel)]="employee.phoneno" >
+          <label>Email</label> <input type="text"  [(ngModel)]="employee.email" >
+          <label>Password</label> <input type="text" [(ngModel)]="employee.password" >
+        </div>
+        <div>
+          <label>Salary</label> <input type="text"  [(ngModel)]="employee.salary" >
+          <label>workHours</label> <input type="text"  [(ngModel)]="employee.workHours" >
+          <label>Age</label> <input type="text"  [(ngModel)]="employee.age" >
+        </div>
+        <div>
+  
+          <label>role</label>
+          <select [(ngModel)]="employee.user_role" name="thes" id="sel">
+           <option>admin</option>
+           <option>receptionist</option>
+           <option >accountant</option>
+           <option >pharmacist</option>
+           </select>
+            
+          
+           <label>Department</label>
+         <select class="form-dropdown"  [(ngModel)]="employee.dept_id">
+          <option>Please Select</option>
+          <option [ngValue]="1">Dental</option>
+          <option [ngValue]="2">surgery</option>
+          <option [ngValue]="3">orthopaedics</option>
+          <option [ngValue]="4">psychiatry</option>
+          <option [ngValue]="5">skin</option>
+          <option [ngValue]="6">neurology</option>
+
+      </select>
+         
+      <label>Gender</label>
+      <select [(ngModel)]="employee.gender" name="thes" id="sel">
+       <option>male</option>
+       <option>female</option>
+       </select>
+      
+       
+        <label>  The Clinic</label>
+          <select class="form-dropdown"  [(ngModel)]="employee.clinictId">
+            <option>Please Select</option>
+            <option [ngValue]="1">The Minute Medical.</option>
+            <option [ngValue]="2">Treatment Solutions</option>
+            <option [ngValue]="3">Medical Zone</option>
+            <option [ngValue]="4">Union Family Health Center</option>
+            <option [ngValue]="5">First Priority Medical</option>
+        </select>
+        </div>
+  
+    </ul>
+    
+   <button (click)="update(employee)" class="btn " id="btn"> Save</button>
+  </div>
+</div>
+</div>
+
+
+
+<!-- <div class="alert alert-info">
  
     <ul>
         <li>TheID<input type="text" [(ngModel)]="employee._id"></li>
@@ -30,5 +116,5 @@
         
     </ul>
     
-   <button (click)="update()" class="btn btn-danger"> Save</button>
-  </div>
+   <button (click)="update(employee)" class="btn btn-danger"> Save</button>
+  </div> -->

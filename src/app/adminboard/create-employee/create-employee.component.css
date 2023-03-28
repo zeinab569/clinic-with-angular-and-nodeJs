@@ -1,126 +1,67 @@
-body {
-  align-items: center;
-  /* background-color: #000; */
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-}
-
-.main {
-  margin: 0px auto;
-  background-color: #268fac;
-  border-radius: 20px;
-  box-sizing: border-box;
-  height: 700px;
-  padding: 20px;
-  width: 50%;
-}
-
-.title {
-  color: #eee;
-  font-family: sans-serif;
-  font-size: 36px;
-  font-weight: 600;
-  margin-top: 30px;
-}
-
-.subtitle {
-  color: #eee;
-  font-family: sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-.input-container {
-  height: 50px;
-  position: relative;
-  width: 100%;
-}
-
-.ic1 {
-  margin-top: 40px;
-}
-
-.ic2 {
-  margin-top: 30px;
-}
-
-.input {
-  background-color: #abf5ff96;
-  border-radius: 12px;
-  border: 0;
-  box-sizing: border-box;
-  color: #eee;
-  font-size: 18px;
-  height: 100%;
-  outline: 0;
-  padding: 4px 20px 0;
-  width: 100%;
-}
-
-.cut {
-  background-color:#268fac;
-  border-radius: 10px;
-  height: 20px;
-  left: 20px;
-  position: absolute;
-  top: -20px;
-  transform: translateY(0);
-  transition: transform 200ms;
-  width: 76px;
-}
-
-.cut-short {
-  width: 50px;
-}
-
-.input:focus ~ .cut,
-.input:not(:placeholder-shown) ~ .cut {
-  transform: translateY(8px);
-}
-
-.placeholder {
-  color:transparent;
-  font-family: sans-serif;
-  left: 20px;
-  line-height: 14px;
-  pointer-events: none;
-  position: absolute;
-  transform-origin: 0 50%;
-  transition: transform 200ms, color 200ms;
-  top: 20px;
-}
-
-.input:focus ~ .placeholder
-/* .input:not(:placeholder-shown) ~ .placeholder */
- {
-  transform: translateY(-30px) translateX(10px) scale(0.75);
-}
-
-/* .input:not(:placeholder-shown) ~ .placeholder {
-  color: #2121da;
-} */
-
-/* .input:focus ~ .placeholder {
-  color: #dc2f55;
-} */
-
-.submit {
-  background-color: #08d;
-  border-radius: 12px;
-  border: 0;
-  box-sizing: border-box;
-  color: #eee;
-  cursor: pointer;
-  font-size: 18px;
-  height: 50px;
-  margin-top: 38px;
-   outline: 0;
+body{
+  scroll-behavior: smooth;
   text-align: center;
-  width: 100%;
+  
 }
 
-.submit:active {
-  background-color: #06b;
+.thef{
+  padding: 10px ;
+  margin: 5% auto;
+  width: 70%;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 5px 5px rgba(136, 188, 192, 0.861);
+  
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
+label{
+  color:rgb(16, 108, 121);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+
+input{
+  width: 20%;
+  margin: 2%;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  color: rgba(66, 122, 122, 0.849);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: 1px 1px 3px rgb(174, 174, 174);
+}
+
+select{
+  margin: 2%;
+  padding: 4px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(222, 223, 224);
+  box-shadow: 1px 1px 3px rgb(174, 174, 174);
+}
+  body, html {
+  touch-action: auto
+  }
+  .jfCardForm .jfProgress {
+  bottom: 20px !important;
+  }
+  .jfCardForm .jfForm-backgroundOverlay,
+  .jfCardForm .jfForm-backgroundUnderlay {
+  height: 100%;
+  }
+#input_22{
+  margin-right: 40%;
+}
+.themain{
+  margin-top: 30px;
+}
+#btn{
+  margin-left: 45rem;
+  background-color: rgb(22, 3, 109);
+  color: aliceblue;
+}
+html { -webkit-overflow-scrolling: touch; overflow: scroll; }body { overflow: scroll; }

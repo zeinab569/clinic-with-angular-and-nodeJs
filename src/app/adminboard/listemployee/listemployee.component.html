@@ -29,11 +29,11 @@
         <td>{{item.employeeImage}}</td>
         <td>{{item.age}}</td>
         <td>
-          <button class="btn btn-primary text-light mx-3 rounded " (click)="delete(item._id)">Delete</button>
+          <button class="btn btn-outline-danger" (click)="delete(item._id)" ><i class="fa fa-trash-o"></i></button>
        </td>
-       
-        
-      
+       <td>
+        <button class="btn btn-outline-danger" (click)="thedite(item)" ><i class="fa fa-edit"></i></button>
+     </td>
       </tr>
     </tbody>
   </table>

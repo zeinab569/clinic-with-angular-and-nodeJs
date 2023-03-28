@@ -1,145 +1,53 @@
-<div class="main" >
-  <div class="title">New Employee</div>
-  <!-- <div class="subtitle">Let's create your account!</div> -->
-  <div class="input-container ic1">
-    <input id="firstname" class="input" type="text" placeholder="id" [(ngModel)]="employee._id" />
-    <div class="cut"></div>
-    <label for="firstname" class="placeholder" >ID</label>
-  </div>
-  <div class="input-container ic2">
-    <input id="lastname" class="input" type="text" placeholder=" userName" [(ngModel)]="employee.name"/>
-    <div class="cut"></div>
-    <label for="lastname" class="placeholder">Name</label>
-  </div>
-  <div class="input-container ic2">
-    <input id="lastname" class="input" type="text" placeholder=" userName" [(ngModel)]="employee.user_name"/>
-    <div class="cut"></div>
-    <label for="lastname" class="placeholder">user name</label>
-  </div>
-  <div class="input-container ic2">
-    <input id="email" class="input" type="text" placeholder=" email" [(ngModel)]="employee.email" />
-    <div class="cut cut-short"></div>
-    <label for="email" class="placeholder">Email/>
-    </label>
-  </div>
-  <div class="input-container ic2">
-    <input id="email" class="input" type="text" placeholder=" phone"  [(ngModel)]="employee.phoneno" />
-    <div class="cut cut-short"></div>
-    <label for="email" class="placeholder">Phone/>
-    </label>
-  </div>
-  <div class="input-container ic2">
-    <input id="email" class="input" type="text" placeholder="nn" [(ngModel)]="employee.password" />
-    <div class="cut cut-short"></div>
-    <label for="email" class="placeholder">Password/>
-    </label>
-  </div>
-  <div class="input-container ic2">
-    <input id="email" class="input" type="text" placeholder="nn" [(ngModel)]="employee.salary" />
-    <div class="cut cut-short"></div>
-    <label for="email" class="placeholder">Salary/>
-    </label>
-  </div>
-  <div class="input-container ic2">
-    <input id="email" class="input" type="text" placeholder="nn" [(ngModel)]="employee.workHours" />
-    <div class="cut cut-short"></div>
-    <label for="email" class="placeholder">Work Hours/>
-    </label>
-  </div>
-  <div class="input-container ic2">
-    <input id="email" class="input" type="text" placeholder="nn" [(ngModel)]="employee.age" />
-    <div class="cut cut-short"></div>
-    <label for="email" class="placeholder">Age/>
-    </label>
-  </div>
 
-  <div class="input-container ic1">
-    <select [(ngModel)]="employee.gender" name="thes" id="sel">
-      <option>male</option>
-      <option>female</option>
-      </select>
-  </div>
-  <div class="input-container ic1">
-    <select [(ngModel)]="employee.user_role" name="thes" id="sel">
-      <option>admin</option>
-      <option>receptionist</option>
-      <option >accountant</option>
-      <option >pharmacist</option>
-      </select>
-  </div>
-  <div>
-    <select class="form-dropdown"  [(ngModel)]="employee.clinictId">
-      <option>Please Select</option>
-      <option [ngValue]="1">The Minute Medical.</option>
-      <option [ngValue]="2">Treatment Solutions</option>
-      <option [ngValue]="3">Medical Zone</option>
-      <option [ngValue]="4">Union Family Health Center</option>
-      <option [ngValue]="5">First Priority Medical</option>
-  </select>
-  </div>
-  <div>
-    <select class="form-dropdown"  [(ngModel)]="employee.dept_id">
-      <option>Please Select</option>
-      <option [ngValue]="1">Dental</option>
-      <option [ngValue]="2">surgery</option>
-      <option [ngValue]="3">orthopaedics</option>
-      <option [ngValue]="4">psychiatry</option>
-      <option [ngValue]="5">skin</option>
-      <option [ngValue]="6">neurology</option>
-  </select>
-  </div>
-  <!-- <button (click)="save()" class="btn btn-danger"> Save</button> -->
-  <button class="btn btn-outline-info my-2 px-5 text-light" (click)="save()">Save</button>
-</div>
+<div role="main" class="thef">
+  
+  <ul class=" page-section " type="none">
+      <!-- first container for image -->
+          <div class="row">
+              
+                  <div class="col col-lg-6">
+                      <h2 id="header_1" class="form-header" data-component="header"> Add Employee</h2>
+                  </div>
+                  
+                  <div class="col col-lg-6">
+                    <img src="../../assets/dm.jpg"
+                        alt="New Patient Enrollment"  class="header-logo-right">
+                </div>
+                
+          </div>
+</ul>
 
-
-
-<!--
-<div class="alert primary">
- 
-  <ul>
-    
-        <li>TheID<input type="text" [(ngModel)]="employee._id"></li>
-        <li>Name<input type="text" [(ngModel)]="employee.name"></li>
-        <li>userName<input type="text" [(ngModel)]="employee.user_name"></li>
-        <li>Phone <input type="text"  [(ngModel)]="employee.phoneno" ></li>
-        <li>Email <input type="text"  [(ngModel)]="employee.email" ></li>
-        <li>Password <input type="text" [(ngModel)]="employee.password" ></li>
-        <li>Salary <input type="text"  [(ngModel)]="employee.salary" ></li>
-        <li>workHours <input type="text"  [(ngModel)]="employee.workHours" ></li>
-        <li>Age <input type="text"  [(ngModel)]="employee.age" ></li>
-
-      <li> role
+<div class="themain">
+  <div class="alert primary">
+    <ul>
+         <div> 
+           <label>TheID</label><input type="text" [(ngModel)]="employee._id"> 
+           <label>Name</label><input type="text" [(ngModel)]="employee.name">  
+           <label>userName</label><input type="text" [(ngModel)]="employee.user_name">
+         </div>
+        <div>
+          <label>Phone</label> <input type="text"  [(ngModel)]="employee.phoneno" >
+          <label>Email</label> <input type="text"  [(ngModel)]="employee.email" >
+          <label>Password</label> <input type="text" [(ngModel)]="employee.password" >
+        </div>
+        <div>
+          <label>Salary</label> <input type="text"  [(ngModel)]="employee.salary" >
+          <label>workHours</label> <input type="text"  [(ngModel)]="employee.workHours" >
+          <label>Age</label> <input type="text"  [(ngModel)]="employee.age" >
+        </div>
+        <div>
+  
+          <label>role</label>
           <select [(ngModel)]="employee.user_role" name="thes" id="sel">
            <option>admin</option>
            <option>receptionist</option>
            <option >accountant</option>
            <option >pharmacist</option>
            </select>
-      </li>
-      
-      
-      <li> Gender
-        <select [(ngModel)]="employee.gender" name="thes" id="sel">
-         <option>male</option>
-         <option>female</option>
-         </select>
-    </li>
-     
-      <li>
-        The Clinic
-        <select class="form-dropdown"  [(ngModel)]="employee.clinictId">
-          <option>Please Select</option>
-          <option [ngValue]="1">The Minute Medical.</option>
-          <option [ngValue]="2">Treatment Solutions</option>
-          <option [ngValue]="3">Medical Zone</option>
-          <option [ngValue]="4">Union Family Health Center</option>
-          <option [ngValue]="5">First Priority Medical</option>
-      </select>
-      </li>
-      <li>
-        Department
-        <select class="form-dropdown"  [(ngModel)]="employee.dept_id">
+            
+          
+           <label>Department</label>
+         <select class="form-dropdown"  [(ngModel)]="employee.dept_id">
           <option>Please Select</option>
           <option [ngValue]="1">Dental</option>
           <option [ngValue]="2">surgery</option>
@@ -147,12 +55,33 @@
           <option [ngValue]="4">psychiatry</option>
           <option [ngValue]="5">skin</option>
           <option [ngValue]="6">neurology</option>
+
       </select>
-      </li>
-      
-  </ul>
+         
+      <label>Gender</label>
+      <select [(ngModel)]="employee.gender" name="thes" id="sel">
+       <option>male</option>
+       <option>female</option>
+       </select>
+      </div>
+
+       <div>
+        <label>  The Clinic</label>
+          <select class="form-dropdown"  [(ngModel)]="employee.clinictId">
+            <option>Please Select</option>
+            <option [ngValue]="1">The Minute Medical.</option>
+            <option [ngValue]="2">Treatment Solutions</option>
+            <option [ngValue]="3">Medical Zone</option>
+            <option [ngValue]="4">Union Family Health Center</option>
+            <option [ngValue]="5">First Priority Medical</option>
+        </select>
+        </div>
   
- <button (click)="save()" class="btn btn-danger"> Save</button>
+    </ul>
+    
+   <button (click)="save()" class="btn " id="btn"> Save</button>
+  </div>
 </div>
--->
+</div>
+
 
