@@ -15,14 +15,14 @@ import { RegisterComponent } from './auth/register/register.component';
 import { AuthGuard } from './shared/auth.guard';
 import { from } from 'rxjs';
 import { AuthInterceptor } from './_helper/auth-interceptor';
-// import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SharedModule } from './shared/shared.module';
-// import { MatRadioModule } from '@angular/material/radio';
-// import { MatToolbarModule } from '@angular/material/toolbar';
-// import { MatSidenavModule} from '@angular/material/sidenav';
-// import { MatListModule} from '@angular/material/list';
-// import { MatButtonModule} from '@angular/material/button';
-// import { MatIconModule} from '@angular/material/icon';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule} from '@angular/material/sidenav';
+import { MatListModule} from '@angular/material/list';
+import { MatButtonModule} from '@angular/material/button';
+import { MatIconModule} from '@angular/material/icon';
 import { CheckroleComponent } from './auth/checkrole/checkrole.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
@@ -48,14 +48,14 @@ import { NotfoundComponent } from './notfound/notfound.component';
     CommonModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    // MatSnackBarModule,
+    MatSnackBarModule,
     SharedModule,
-    // MatRadioModule ,
-    // MatToolbarModule,
-    // MatSidenavModule,
-    // MatListModule,
-    // MatButtonModule,
-    // MatIconModule,
+    MatRadioModule ,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatButtonModule,
+    MatIconModule,
     AppRoutingModule
    
     
