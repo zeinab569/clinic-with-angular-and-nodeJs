@@ -22,6 +22,8 @@ export class Doctor {
         ,public prescreption:number
         ,public address:any
         ,public appointments:any
+        ,public patientid:any
+        ,public clinicId:any
         
         ){}
 

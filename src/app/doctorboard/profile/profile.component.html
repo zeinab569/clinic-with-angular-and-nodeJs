@@ -82,22 +82,22 @@
 
 
   <!-- <router-outlet></router-outlet> -->
-  <div class="panel-header panel-header-sm bg-dark" style=" height: 100px;">
-</div>
+  <!-- <div class="panel-header panel-header-sm bg-dark" style=" height: 100px;"> -->
+<!-- </div> -->
 <div class="main-content text-secondary">
   <div class="row">
     <div class="col-md-8">
       <div class="card">
         <div class="card-header">
-          <h3 class="title" >Edit Profile</h3>
+          <h3 class="title text-info" style=" text-align: start;" >Edit Profile</h3>
         </div>
         <div class="card-body">
           <form>
             <div class="row">
               <div class="col-md-5 pr-1">
                 <div class="form-group">
-                  <label>Company (disabled)</label>
-                  <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
+                  <label>Clinin Name (disabled)</label>
+                  <input type="text" class="form-control" disabled="" placeholder="Company" value="city star">
                 </div>
               </div>
               <div class="col-md-3 ">
@@ -128,12 +128,12 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-md-12">
+              <!-- <div class="col-md-12">
                 <div class="form-group">
                   <label>Address</label>
                   <input type="text" class="form-control" placeholder="Home Address" value="{{doc.address.city}} _ {{doc.address.street}} _ {{doc.address.building}} ">
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="row">
               <div class="col-md-4 pr-1">
@@ -170,14 +170,14 @@
           </form>
         </div>
       
-          <button class="sb col-md-3 py-3 rounded"> Save Changes</button>
+          <button class="sb py-3 rounded"> Save Changes</button>
 
       </div>
     </div>
 
 
     <div class="col-md-3">
-      <div class="card card-user">
+      <div class="card card-user" style=" text-align: center;">
         <div class="image">
           <img id="mm" src="../../../assets/13.jpg" alt="...">
         </div>
@@ -185,7 +185,7 @@
           <div class="author">
             <a href="#">
               <img class="avatar border-gray" src="../../../assets/12.jpg" alt="...">
-              <h5 class="title">{{doc.fullName}}</h5>
+              <h4 class="text-info" >{{doc.fullName}}</h4>
             </a>
             <p class="description">
               michael24

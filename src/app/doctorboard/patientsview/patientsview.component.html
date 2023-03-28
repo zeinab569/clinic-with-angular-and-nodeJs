@@ -1,0 +1,31 @@
+<p>patientsview works!</p>
+
+<div class="container py-5">
+    <div class="row text-center text-white">
+       
+    </div>
+</div>
+
+
+<div class="container  " >
+    <div class="row text-center me-5 ">
+
+      
+        <div class="col-xl-3 col-sm-6 mb-5  "   *ngFor="let prescription of  doc">
+            <div class="bg-white  py-5 px-4  formbox ">
+                <!-- <img src={{prescription.patient_id.img}} alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"> -->
+                <h5 class="mb-0">{{prescription.firstName}} {{prescription.lastName}} {{prescription._id}}</h5><span class="small text-uppercase text-muted">{{prescription.age}} years</span>
+                <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item"><a [routerLink]="['historyInfo',prescription._id]"  (click)="save(prescription)" class="social-link"><i class="fa fa-info-circle" ></i></a></li>
+                    <li class="list-inline-item"><a [routerLink]="['historyInfo',prescription._id]"  (click)="save(prescription)" class="social-link"><i class="fa fa-info-circle" ></i></a></li>
+                    <router-outlet></router-outlet>
+                </ul>
+              
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+

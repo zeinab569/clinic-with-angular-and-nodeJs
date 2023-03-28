@@ -1,0 +1,91 @@
+<!-- <div role="main" class="form-all"> -->
+<div role="main" class="main">
+    <ul  type="none">
+        <!-- first container for image -->
+        
+        <li >
+            <div class="row">
+                
+                    <div class="col col-lg-6">
+                        <h2 id="header_1" > Patient Medical History</h2>
+                        <div id="subHeader_1">Dr. Xander M. Spencer</div>
+                    </div>
+                    <div class="col col-lg-6">
+                        <img src="https://www.jotform.com/uploads/utkuyildirim/form_files/dr.5f327cf9785fa8.05675056.5f48f8215276c2.83332452.png"
+                            alt="New Patient Enrollment"  class="header-logo-right">
+                    </div>
+                
+            </div>
+        </li>
+        <!-- for names -->
+        <li  >
+            <label class="one"> Name </label>
+                <div>
+                    <label >ID</label>
+                    <input type="text" [(ngModel)]="mhistory._id" >
+                    <label>First Name</label>
+                    <input  value="" [(ngModel)]="mhistory.patientId.firstName"  >
+                    <label >Last Name</label>
+                    <input  value="" [(ngModel)]="mhistory.patientId.lastName"  >
+                    <label  >Doctor Name</label>
+                    <input value="" [(ngModel)]="mhistory.doctorId.fullName" >
+                </div>
+        </li>
+        <!-- gender -->
+        <li >
+            <label class="one"> gender </label>
+            <div> 
+                <select [(ngModel)]="mhistory.doctorId.gender" >
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+             </select> </div>
+        </li>
+        <!-- phone number -->
+        <li >
+            <label class="one "  [(ngModel)]="mhistory.doctorId.phoneNumber"> Contact Number: </label>
+         <input  value="" placeholder="(000) 000-0000">
+          
+        </li>
+        <!-- email -->
+        <li >
+            <label class="one" [(ngModel)]="mhistory.doctorId.email"> E-mail </label>
+             <input  value="" placeholder="ex: myname@example.com">
+        </li>
+        <hr>
+        <!-- medicinesbefore -->
+        <li >
+            <label class="one" > medicinesbefore: </label>
+            <input placeholder="medcine name" value="" [(ngModel)]="mhistory.medicinesbefore.name">
+            <input placeholder="quantity" value="" style="width: 15%;" [(ngModel)]="mhistory.medicinesbefore.quantity">
+            from<input placeholder="3/1/2020" value="" style="width: 15%;" [(ngModel)]="mhistory.medicinesbefore.from">
+            to<input placeholder="to" value="" style="width: 15%;" [(ngModel)]="mhistory.medicinesbefore.to">
+        </li>
+        <!-- bloodType -->
+        <li >
+            <label class="one"> Blood Type </label>
+            <div> 
+                <select [(ngModel)]="mhistory.bloodType" >
+                    <option value="AB+">AB+</option>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="O+">O+</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                    <option value="O-">O-</option>
+                    <option value="AB-">AB-</option>
+             </select> </div>
+        </li>
+        <hr>
+
+        <li >
+            <label class="one" > If yes, please list it here </label>
+             <textarea id="input_22" style="width:60%;height:163px"  [(ngModel)]="mhistory.chronicdiseases" >
+              
+            </textarea> 
+        </li>
+        <li >
+            <button type="button" class="btn btn-outline-info " (click)="update()">Success</button>
+        </li>
+    </ul>
+</div>
+<router-outlet></router-outlet>

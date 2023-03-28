@@ -1,0 +1,9 @@
+.formbox
+          {
+            box-shadow: 2px 5px 9px 0 rgb(94, 17, 227);
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            font-family: arial;
+            border-radius: 25px;
+          }

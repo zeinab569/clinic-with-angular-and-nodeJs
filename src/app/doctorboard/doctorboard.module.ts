@@ -5,11 +5,14 @@ import { DoctorboardRoutingModule } from './doctorboard-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 import { DoctorcardsComponent } from './doctorcards/doctorcards.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { AddDoctorComponent } from './add-doctor/add-doctor.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateDoctorComponent } from './create-doctor/create-doctor.component';
+import { DoctorListComponent } from './doctor-list/doctor-list.component';
+import { PatientsviewComponent } from './patientsview/patientsview.component';
+import { MedicalhistoryComponent } from './medicalhistory/medicalhistory.component';
+import { CreatemhComponent } from './createmh/createmh.component';
 
 
 @NgModule({
@@ -17,8 +20,11 @@ import { CreateDoctorComponent } from './create-doctor/create-doctor.component';
     ProfileComponent,
     DoctorcardsComponent,
     DashboardComponent,
-    AddDoctorComponent,
-    CreateDoctorComponent
+    CreateDoctorComponent,
+    DoctorListComponent,
+    PatientsviewComponent,
+    MedicalhistoryComponent,
+    CreatemhComponent
   ],
   imports: [
     CommonModule,
@@ -31,8 +37,8 @@ import { CreateDoctorComponent } from './create-doctor/create-doctor.component';
     DashboardComponent,
     ProfileComponent,
     DoctorcardsComponent,
-    AddDoctorComponent,
-    CreateDoctorComponent
+    CreateDoctorComponent,
+    DoctorListComponent,
   ],
 })
 export class DoctorboardModule { }

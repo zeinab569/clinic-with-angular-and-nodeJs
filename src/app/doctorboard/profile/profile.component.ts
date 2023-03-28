@@ -10,7 +10,7 @@ import { DoctorService } from 'src/app/_sevices/doctor.service';
 })
 export class ProfileComponent implements OnInit{
   doctors:Doctor[]=[];
-  doc:Doctor=new Doctor(0,"","","","","","","",0,0,"",0,0,0,0,0,"","");
+  doc:Doctor=new Doctor(0,"","","","","","","",0,0,"",0,0,0,0,0,"","","","");
   constructor( public doctorService:DoctorService,public activatedRoute:ActivatedRoute){}
   ngOnInit(){
   //   this.doctorService.getAll().subscribe(data=>{

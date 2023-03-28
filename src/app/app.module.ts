@@ -31,7 +31,7 @@ import { httpInterceptorProviders } from './_helper/http';
     NgbModule,
     DoctorboardModule,
     AdminboardModule,
-    CommonModule
+    CommonModule,
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
