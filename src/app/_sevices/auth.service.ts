@@ -121,8 +121,7 @@ export class AuthService {
     localStorage.removeItem("token");
     localStorage.removeItem("expiration")
   }
-
-  
+ 
   //ok
   private getAuthData(){
     const token = localStorage.getItem("token");
@@ -135,14 +134,12 @@ export class AuthService {
       expirationDate : new Date(expirationDate)
     }
   }
-
-
   //ok
   getUserDatas(id: string){
     return this.http.get<{_id: string , name: string, email: string, nic: string ,contact: string, password: string, role: string}>
     ('http://localhost:8080/user/' +id);
   }
-
+  
 // update data
   getUser() {
     this.http.get<{message: string, users: any}>('http://localhost:8080/user/getUserData')

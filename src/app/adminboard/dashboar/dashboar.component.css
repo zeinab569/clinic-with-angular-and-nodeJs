@@ -224,13 +224,11 @@ ul{
 /* main-content */
 .main-content {
     margin-left:230px;
-    margin-top: 100px;
+    margin-top: 99px;
     padding: 10px 18px;
     transition: margin-left .5s;
 }
 /* main-content */
-
-
 
 @media screen and (max-width:500px) {
 

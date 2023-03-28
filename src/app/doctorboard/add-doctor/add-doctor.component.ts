@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Doctor } from 'src/app/_models/doctor';
 import { DoctorService } from 'src/app/_sevices/doctor.service';
 import Swal from 'sweetalert2';
+
 @Component({
   selector: 'app-add-doctor',
   templateUrl: './add-doctor.component.html',
@@ -40,8 +41,6 @@ Show(){
   })
   // Swal.fire("Good job!", "...", "success")
 }
-
-
 
 
 save(current:Doctor){

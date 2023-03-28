@@ -18,7 +18,7 @@
                             <img src="https://placehold.it/128x128">
                         </figure> -->
                         <a class=" level-item logo-margin" >
-                          <img src="https://i.ibb.co/L9X6wKM/pharmacare-logo-hori-tagline-2.png" width="152" height="140">
+                          <img src="../../assets/imcare.jpg" width="152" height="120">
                         </a><br>
   
                         <form (submit)="onSignup (signupForm)" #signupForm="ngForm">
@@ -38,13 +38,16 @@
   
                               <p class=" is-left" >Who are You ?</p><br>
   
-                              <!--
+                             
                               <mat-radio-group required name="role" ngModel #roleInput="ngModel" class="is-left">
+                                <mat-radio-button value="admin">Admin</mat-radio-button><br>
+                                <mat-radio-button value="doctor">Doctor</mat-radio-button><br>
+                                <mat-radio-button value="receptionist">Receptionist</mat-radio-button><br>
                                 <mat-radio-button value="pharmacist">Pharmacist</mat-radio-button><br>
-                                <mat-radio-button value="assistantPharmacist">Assistant Pharmacist</mat-radio-button><br>
-                                <mat-radio-button value="cashier">Cashier</mat-radio-button><br>
+                                <mat-radio-button value="accountant">Accountant</mat-radio-button><br>
+                                <mat-radio-button value="patient">Patient</mat-radio-button><br>
                               </mat-radio-group>
-                               -->
+                               
                           </div>
                          
                         </div>
@@ -112,8 +115,9 @@
       </section>
   
     </div>
-  </div>
+</div>
   
+
   <script>
     var dropdown = document.querySelector('.dropdown');
   dropdown.addEventListener('click', function(event) {

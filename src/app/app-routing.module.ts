@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AuthGuard } from './shared/auth.guard';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,7 +13,7 @@ const routes: Routes = [
  
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: RegisterComponent},
-  
+  {path:"**",component:NotfoundComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

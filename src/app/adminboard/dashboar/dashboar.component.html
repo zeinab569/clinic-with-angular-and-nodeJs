@@ -1,22 +1,13 @@
 <div class="topnav shadow p-1">
-    <a>Admin Dashboard</a>
-    <span class="menu" (click)="openNav(true)"><i class="bi bi-list" style="color: aqua;"></i></span>
-  </div>
-  <!-- topnavbar -->
-  
+    <app-header> </app-header>
+</div>
   <!-- left sidebar nav  -->
   
   <div  class="sidebar shadow p-2"  id="sidebar"  [ngStyle]="responsiveMenu">
     <ul>
         <li><a  routerLink="maincontent"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
         <li><a  routerLink="docprofile"><i class="bi bi-card-text"></i> Profile</a></li>
-        <li>
-            <a ><i class="bi bi-bag"></i> Products <i class="bi bi-arrow-right icon"></i></a>
-            <!-- <ul class="dropdow-container">
-                <li><a href="#">Link1</a></li>
-                <li><a href="#">Link2</a></li>
-            </ul> -->
-        </li>
+        
         <li>
             <a routerLink="listemployees"><i class="bi bi-tag"></i> Staff <i class="bi bi-arrow-right icon"></i></a>
             <ul class="dropdow-container">
@@ -24,6 +15,23 @@
                 <li><a routerLink="updateemployees">Update Employee</a></li>
             </ul>
         </li>
+        <li>
+            <a ><i class="bi bi-bag"></i> Department <i class="bi bi-arrow-right icon"></i></a>
+             <ul class="dropdow-container">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+            </ul> 
+        </li>
+        <li>
+            <a ><i class="bi bi-bag"></i> Services <i class="bi bi-arrow-right icon"></i></a>
+             <ul class="dropdow-container">
+                <li><a href="#">Link1</a></li>
+                <li><a href="#">Link2</a></li>
+            </ul> 
+        </li>
+        <li><a routerLink="addDoctor"><i class="bi bi-person-gear"></i> Doctor List</a></li>
+        <li><a routerLink="#"><i class="bi bi-person-gear"></i> invoice List</a></li>
+        <li><a routerLink="#"><i class="bi bi-person-gear"></i> patient List</a></li>
         <li><a routerLink="/users"><i class="bi bi-person-gear"></i> User</a></li>
         <li><a href="#"><i class="bi bi-box-arrow-left"></i> Logout</a></li>
   

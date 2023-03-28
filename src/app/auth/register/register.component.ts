@@ -16,7 +16,13 @@ export class RegisterComponent {
       return;
     }
     console.log(form.value.role)
-    this.authService.createUser(form.value.name,form.value.contact,form.value.nic,form.value.email,form.value.password,form.value.role);
+    this.authService.createUser(
+      form.value.name,
+      form.value.contact,
+      form.value.nic,
+      form.value.email,
+      form.value.password,
+      form.value.role);
   };
 
 

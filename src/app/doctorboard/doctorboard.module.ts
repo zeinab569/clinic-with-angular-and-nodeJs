@@ -18,7 +18,8 @@ import { CreateDoctorComponent } from './create-doctor/create-doctor.component';
     DoctorcardsComponent,
     DashboardComponent,
     AddDoctorComponent,
-    CreateDoctorComponent
+    CreateDoctorComponent,
+    
   ],
   imports: [
     CommonModule,
@@ -26,6 +27,7 @@ import { CreateDoctorComponent } from './create-doctor/create-doctor.component';
     RouterModule,
     FormsModule,
     HttpClientModule,
+    
   ],
   exports:[
     DashboardComponent,

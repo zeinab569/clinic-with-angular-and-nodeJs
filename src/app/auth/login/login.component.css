@@ -17,6 +17,7 @@ html,body {
   .avatar {
     margin-top: -70px;
     padding-bottom: 20px;
+    size: 10px;
   }
   .avatar img {
     padding: 5px;
