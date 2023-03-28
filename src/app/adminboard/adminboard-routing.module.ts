@@ -20,8 +20,7 @@ const routes: Routes = [
     {path:"adddoctor",component:CreateDoctorComponent}
     
   ]},
-  
-   
+    
 ];
 
 @NgModule({
