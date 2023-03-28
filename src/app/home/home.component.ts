@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgIf } from '@angular/common';
+import { SharedModule } from '../shared/shared.module';
 // import { DoctorboardModule } from "../doctorboard/doctorboard.module";
 
 @Component({
@@ -8,7 +9,7 @@ import { NgIf } from '@angular/common';
   standalone: true,
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  imports:[NgbCarouselModule, NgIf],
+  imports:[NgbCarouselModule, NgIf,SharedModule],
 })
 export class HomeComponent {
   images = ["https://images.unsplash.com/photo-1512678080530-7760d81faba6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80",

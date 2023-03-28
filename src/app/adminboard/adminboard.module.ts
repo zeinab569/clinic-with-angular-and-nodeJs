@@ -10,6 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 import { ListemployeeComponent } from './listemployee/listemployee.component';
 import { EditeemployeeComponent } from './editeemployee/editeemployee.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DoctorboardModule } from '../doctorboard/doctorboard.module';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     SharedModule,
     HttpClientModule,
+    DoctorboardModule
   ],
   exports:[
     CreateEmployeeComponent,

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Employee } from 'src/app/_models/employee';
 import { EmployeeService } from 'src/app/_sevices/employee.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-listemployee',
@@ -21,13 +22,22 @@ export class ListemployeeComponent {
             break;
           }
         }
+      });
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'deleted Successfully &#128077;',
+        showConfirmButton: false,
+        timer: 1500
       })
     }
   }
   
   ngOnInit(){
     this.employeeservices.getAll().subscribe(data=>{
+        console.log(data);
         this.employees=data;
+        
     })
   }
 }

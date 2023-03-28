@@ -25,8 +25,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   {path:"doctorcard", component:DoctorcardsComponent},
   {path:"doctorBoard", component:DashboardComponent},
-
-
+  
 ];
 
 @NgModule({
