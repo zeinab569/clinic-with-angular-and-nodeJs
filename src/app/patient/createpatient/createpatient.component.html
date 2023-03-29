@@ -1,0 +1,164 @@
+<div class="table align-middle" style="margin-left: 300px; width: 80%;" >
+  <form  [formGroup]="patientForm" (ngSubmit)="onSubmit()" >
+  <section class="h-90 h-custom gradient-custom-2">
+     
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12">
+            <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="p-5">
+                      <h1 class="fw-normal mb-5" style="color: #4835d4;">General Infomation</h1>
+                      <div class="row">
+                        <div class="col-md-6 mb-4 pb-2">
+    
+                          <div class="form-outline">
+                              <label class="form-label" for="form3Examplev3">First name</label>
+                            <input  formControlName="patientFirstName"
+                            type="text" id="form3Examplev2" class="form-control " placeholder="First Name" />
+                            
+                          </div>
+    
+                        </div>
+                        <div class="col-md-6 mb-4 pb-2">
+    
+                          <div class="form-outline">
+                              <label class="form-label" for="form3Examplev3">Last name</label>
+                            <input formControlName="patientLastName"
+                             type="text" id="form3Examplev3" class="form-control " placeholder="Last name" />
+                          
+                          </div>
+    
+                        </div>
+                      </div>
+                      <div class="mb-4 pb-2">
+                          <div class="form-outline">
+                            <label class="form-label" for="form3Examplev4">Age</label>
+                            <input formControlName="patientAge" 
+                            type="text" id="form3Examplev4" class="form-control " placeholder="Age" />
+                            
+                          </div>
+                          </div>
+                          <div class="mb-4 pb-2">
+                              <div class="form-outline">
+                                  <label class="form-label" for="form3Examplev3">Gender</label>
+                                  <select class="form-control " formControlName="patientGender">
+                                     <option>Male</option>
+                                     <option>Female</option>
+                                  </select>
+                                
+                              </div>
+                              </div>
+  
+                        <div class="row">
+                          <div class="col-md-6 mb-4 pb-2">
+      
+                            <div class="form-outline">
+                            <label class="form-label" for="form3Examplev2">Insurance Number</label>
+                              <input formControlName="patientInsuranceNumber"
+                               type="text" id="form3Examplev2" class="form-control " placeholder="Insurance Number " />
+                              
+                            </div>
+      
+                          </div>
+                          <div class="col-md-6 mb-4 pb-2">
+      
+                            <div class="form-outline">
+                                <label class="form-label" for="form3Examplev3">Insurance Company</label>
+                                       <select class="form-control "
+                                       formControlName="insuranceCompany"  >
+                                          <option *ngFor="let item of insuranceCompany "  [value]="item.id">{{item.Name}}</option>
+                                          
+                                       </select>
+                            </div>
+      
+                          </div>
+                        </div>
+    
+                      <div class="mb-4 pb-2">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Examplev4">Image</label>
+                          <input  
+                           type="file"  (input)="fileChanged($event)" 
+                           id="form3Examplev4" class="form-control " />
+                          
+                        </div>
+                      </div>
+     
+                    
+    
+                    </div>
+                  </div>
+                  <div class="col-lg-6 bg-indigo text-white">
+                    <div class="p-5">
+                      <h1 class="fw-normal mb-5">Contact Details</h1>
+    
+                      <div class="mb-4 pb-2" >
+                        <div class="form-outline form-white" formGroupName="address">
+                          <label class="form-label" for="form3Examplea2">City</label>
+                          <input formControlName="city"
+                           type="text" id="form3Examplea2" class="form-control " />
+                          
+                        </div>
+                      </div>
+    
+  
+    
+                      <div class="row">
+                        <div class="col-md-5 mb-4 pb-2">
+    
+                          <div class="form-outline form-white" formGroupName="address">
+                              <label class="form-label" for="form3Examplea4">Street</label>
+                            <input formControlName="street"
+                            type="text" id="form3Examplea4" class="form-control " />
+                            
+                          </div>
+    
+                        </div>
+                        <div class="col-md-7 mb-4 pb-2">
+    
+                          <div class="form-outline form-white" formGroupName="address">
+                              <label class="form-label" for="form3Examplea5" >Building</label>
+                            <input formControlName="building"
+                            type="text" id="form3Examplea5" class="form-control " />
+                            
+                          </div>
+    
+                        </div>
+                      </div>
+    
+                      <div class="mb-4 pb-2">
+                        <div class="form-outline form-white">
+                          <label class="form-label" for="form3Examplea6">Phone Number</label>
+                          <input formControlName="patientPhoneNumber"
+                           type="text" id="form3Examplea6" class="form-control " />
+                          
+                        </div>
+                      </div>
+  
+    
+                      <div class="mb-4">
+                        <div class="form-outline form-white">
+                          <label class="form-label" for="form3Examplea9">Email</label>
+                          <input formControlName="patientEmail"
+                           type="text" id="form3Examplea9" class="form-control " />
+                          
+                        </div>
+                      </div>
+    
+                      <button type="submit" class="btn btn-light "
+                        data-mdb-ripple-color="dark">Register</button>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </form> 
+    </div>

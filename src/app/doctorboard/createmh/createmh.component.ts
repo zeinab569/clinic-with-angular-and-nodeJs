@@ -12,7 +12,7 @@ export class CreatemhComponent {
   constructor(public doctorService:MedicalHistoryService,public activatedRoute:ActivatedRoute,public router:Router){}
 
  
-  mh:MedicalHistory=new MedicalHistory("","","",0,0,0,"");
+  mh:MedicalHistory=new MedicalHistory("","","",0,0,0,"",0,"","");
 
   save(){
     

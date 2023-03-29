@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { DoctorboardRoutingModule } from './doctorboard-routing.module';
 import { ProfileComponent } from './profile/profile.component';
 import { DoctorcardsComponent } from './doctorcards/doctorcards.component';
@@ -13,6 +12,9 @@ import { DoctorListComponent } from './doctor-list/doctor-list.component';
 import { PatientsviewComponent } from './patientsview/patientsview.component';
 import { MedicalhistoryComponent } from './medicalhistory/medicalhistory.component';
 import { CreatemhComponent } from './createmh/createmh.component';
+import { AdminboardModule } from '../adminboard/adminboard.module';
+import { EditComponent } from './edit/edit.component';
+
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { CreatemhComponent } from './createmh/createmh.component';
     DoctorListComponent,
     PatientsviewComponent,
     MedicalhistoryComponent,
-    CreatemhComponent
+    CreatemhComponent,
+    EditComponent
   ],
   imports: [
     CommonModule,

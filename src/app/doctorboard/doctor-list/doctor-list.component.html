@@ -18,8 +18,7 @@
         <td>{{n.fullName}}</td>
         <td>{{n.email}}</td>
         <td><button (click)="delete(n._id)" type="button" class="btn btn-outline-danger"><i class="fa fa-trash-o"></i></button></td>
-        <td><button  routerLink="editD" (click)="save(n)" type="button" class="btn btn-outline-info"><i class="fa fa-edit"></i></button></td>
-        
+        <td><button  routerLink="gitdoctors" (click)="thedite(n)" type="button" class="btn btn-outline-info"><i class="fa fa-edit"></i></button></td>
         
         <!-- <td><button  (click)="Show()" type="button" class="btn btn-outline-info"><i class="fa fa-edit"></i>ssss</button></td> -->
       </tr>
@@ -29,10 +28,10 @@
  
  <!-- main content  -->
  
- <div class="child_div" *ngIf="flag">
+ <!-- <div class="child_div" *ngIf="flag">
     <div class="alert alert-danger text-light">
       <div >
-       <label > ID</label> 
+       <label> ID</label> 
       <input type="text" title="ID" [(ngModel)]= "currentDoc._id">
        <label > Age</label> 
       <input type="text" title="ID" [(ngModel)]= "currentDoc.userName">
@@ -41,7 +40,7 @@
        <button class="bg-dark text-light mx-3 rounded" (click)="update(currentDoc)" >SAVE Changes</button>
       </div>
   </div>
-  </div>
+  </div> -->
   
   
   

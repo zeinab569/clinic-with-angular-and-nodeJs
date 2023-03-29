@@ -1,0 +1,40 @@
+<div class="container py-5">
+    <div class="row text-center text-white">
+       
+    </div>
+  </div><!-- End -->
+  
+  
+  <div class="container  " >
+    <div class="row text-center me-5 ">
+  
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5  "  *ngFor="let prescription of  prescriptionList">
+          
+            <div class="bg-white  py-5 px-4  shadow-sm  box ">
+              <h3>
+                {{prescription.clinic_id.clinicName}}
+             </h3>
+            <h4>EYE SECTION</h4>
+              <h5  >
+               
+                <span style="font-family: Georgia, 'Times New Roman', Times, serif;font-style: oblique ;font-weight: bold;">Patient Name:-</span>{{prescription.patient_id.firstName}}
+                {{prescription.patient_id.lastName}}
+            </h5> 
+            <h5 class="title"><span style="font-family: Georgia, 'Times New Roman', Times, serif;font-style: oblique ;font-weight: bold;"> Dosage:-</span>{{prescription.dosage}}</h5>
+            <h5 class="title"><span style="font-family: Georgia, 'Times New Roman',
+             Times, serif;font-style: oblique ;font-weight: bold;">
+              creationDate:-</span>{{prescription.creationDate}}</h5>
+              <div ><a  [routerLink]="['/prescrptionupdate',prescription._id]" style="margin: 2%; height: 100%; width: 30%; color: blue;"><i class="fas fa-edit"></i>
+               
+            </a>
+            <a [routerLink]="['/prescrptiondetails',prescription._id]"  style="margin: 2%; height: 100%; width: 30%; color: blue;"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+            <a   (click)="openDialog('3000ms', '15ms',prescription._id)" style="margin: 2%; color: rgb(42, 42, 235); "><i class="fa fa-trash"  saria-hidden="true"></i></a>
+          </div>
+  
+          
+            <!-- <p class="title">{{prescription.dept_id}}</p> -->
+  
+    </div>
+  </div>
+  

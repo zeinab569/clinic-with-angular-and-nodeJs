@@ -6,7 +6,10 @@ export class MedicalHistory {
         public medicine:number,
         public patientId:any,
         public _id:number,
-        public medicinesbefore:any,
+        public name:string,
+        public quantity:number,
+        public from:string,
+        public to:string,
         
         
         

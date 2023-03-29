@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CreateDoctorComponent } from '../doctorboard/create-doctor/create-doctor.component';
 import { DoctorListComponent } from '../doctorboard/doctor-list/doctor-list.component';
+import { EditComponent } from '../doctorboard/edit/edit.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { DashboarComponent } from './dashboar/dashboar.component';
 import { EditeemployeeComponent } from './editeemployee/editeemployee.component';
@@ -20,8 +21,7 @@ const routes: Routes = [
     {path:"adddoctor",component:CreateDoctorComponent}
     
   ]},
-  
-   
+
 ];
 
 @NgModule({

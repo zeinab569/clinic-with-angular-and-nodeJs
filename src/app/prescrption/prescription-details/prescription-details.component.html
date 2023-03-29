@@ -1,0 +1,89 @@
+<div class="wrapper  table-responsive " style="margin-top: 150px;">
+    <div class="prescription_form table align-middle">
+        <table class="prescription"  border="1"    >
+            <tbody>
+                <tr height="15%">
+                    <td colspan="2">
+                        <div class="header">
+                            <div class="logo">
+                                <img
+                                    src="https://seeklogo.com/images/H/hospital-clinic-plus-logo-7916383C7A-seeklogo.com.png" />
+
+                            </div>
+                            <div class="credentials">
+                                <h4>Doctor Name</h4>
+                                <p>{{presdetails.doctor_id.fullName}}</p>
+                                <br />
+                                <br/>
+                                
+                            </div>
+                            <div class="credentials">
+                                <h4>Patiet Name</h4>
+                                <p>{{presdetails.patient_id.firstName}}
+                                    {{presdetails.patient_id.lastName}}</p>
+                                <br />
+                                <br/>
+                                
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="40%">
+                        <div class="desease_details">
+                            <div class="symptoms">
+                                <h4 class="d-header">Dosage</h4>
+                                <ul>
+                                    {{presdetails.dosage}}
+                                </ul>
+                            </div>
+                            <div class="tests">
+                                <h4 class="d-header">Department</h4>
+                                <ul >
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </td>
+                    <td width="60%" valign="top">
+                        <span style="font-size: 3em;">R<sub>x</sub></span>
+                        <hr />
+                        <div class="medicine">
+                           <section >
+                                   <ul *ngFor="let item of presdetails.medicine"  style="list-style: none;">
+                                   <li>
+                                     Medicine Name:-{{item.id.Name}}
+
+                                   </li>
+                                   <li>
+                                    Recomendation:-{{item.id.Recommendation}}
+
+                                  </li>
+                                   <li>
+                                   
+                                    Quantity:-{{item.quantity}}
+                                   </li>
+                                   <li>
+                                    
+                                    period:-{{item.period}}
+                                   </li>
+                                   <li>
+                                    createdAt:-{{item.medicinedate}}
+                                    
+                                   </li>
+                                      <li>
+                                        <hr>
+                                      </li>
+                                </ul>
+                                </section>
+
+                        </div>
+                    </td>
+                </tr>
+               
+            </tbody>
+        </table>
+        
+       
+    </div>
+  </div>

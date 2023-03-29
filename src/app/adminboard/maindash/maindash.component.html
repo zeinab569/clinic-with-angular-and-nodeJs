@@ -1,9 +1,11 @@
-<div class="row">
+<div class="row my-5">
    
     <div class="col-md-3 mb-3">
-      <div class="card bg-primary text-white h-100">
-        <div class="card-body py-5">Primary Card</div>
-        <div class="card-footer d-flex">
+      <div id="first" class="card text-white h-100" style="background-color:#F7C8E0">
+        <div class="card-body py-5"> <i id="tt">Patients</i>  <i class="fa fa-line-chart" style="font-size:30px;color:rgb(255, 255, 255);padding-left:25%;"></i>
+          <br><h3>2,120,00 K</h3>
+        </div>  
+              <div class="card-footer d-flex">
           View Details
           <span class="ms-auto">
             <i class="bi bi-chevron-right"></i>
@@ -12,9 +14,10 @@
       </div>
     </div>
     <div class="col-md-3 mb-3">
-      <div class="card bg-warning text-dark h-100">
-        <div class="card-body py-5">Warning Card</div>
-        <div class="card-footer d-flex">
+      <div id="first" class="card text-light h-100" style="background-color:#5DE8BC">
+        <div class="card-body py-5"> <i id="tt">Doctors</i>  <i class="fa fa-pie-chart" style="font-size:30px;color:rgb(255, 255, 255);padding-left:25%;"></i>
+          <br> <h3>500 D</h3>
+        </div>        <div class="card-footer d-flex">
           View Details
           <span class="ms-auto">
             <i class="bi bi-chevron-right"></i>
@@ -23,9 +26,11 @@
       </div>
     </div>
     <div class="col-md-3 mb-3">
-      <div class="card bg-success text-white h-100">
-        <div class="card-body py-5">Success Card</div>
-        <div class="card-footer d-flex">
+      <div id="first" class="card text-white h-100" style="background-color:#95BDFF">
+        <div class="card-body py-5"> <i id="tt">Appoint</i>  <i class="fa fa-bar-chart" style="font-size:30px;color:rgb(255, 255, 255);padding-left:25%;"></i>
+          <br> <h3>more than 2000/m </h3>
+        </div>      
+          <div class="card-footer d-flex">
           View Details
           <span class="ms-auto">
             <i class="bi bi-chevron-right"></i>
@@ -34,8 +39,10 @@
       </div>
     </div>
     <div class="col-md-3 mb-3">
-      <div class="card bg-danger text-white h-100">
-        <div class="card-body py-5">Danger Card</div>
+      <div id="first" class="card text-white h-100" style="background-color:#AA77FF">
+        <div class="card-body py-5"> <i id="tt">Departments</i>  <i class="fa fa-area-chart" style="font-size:30px;color:rgb(255, 255, 255);padding-left:25%;"></i>
+          <br> <h3>70 dept</h3>  
+        </div>
         <div class="card-footer d-flex">
           View Details
           <span class="ms-auto">
@@ -45,8 +52,115 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-6 mb-3">
+
+<!-- table -->
+<div class="ntable my-5">
+  <table class="table align-middle mb-0 bg-white my-4">
+    <thead class="bg-light">
+      <tr>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Status</th>
+        <th>Position</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <img
+                src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                alt=""
+                style="width: 45px; height: 45px"
+                class="rounded-circle"
+                />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">John Doe</p>
+              <p class="text-muted mb-0">john.doe@gmail.com</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p class="fw-normal mb-1">Software engineer</p>
+          <p class="text-muted mb-0">IT department</p>
+        </td>
+        <td>
+          <span class="alert alert-success rounded-pill ">Active</span>
+        </td>
+        <td>Senior</td>
+        <td><button type="button" class="btn btn-outline-info">Edit</button>
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <img
+                src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                class="rounded-circle"
+                alt=""
+                style="width: 45px; height: 45px"
+                />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">Alex Ray</p>
+              <p class="text-muted mb-0">alex.ray@gmail.com</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p class="fw-normal mb-1">Consultant</p>
+          <p class="text-muted mb-0">Finance</p>
+        </td>
+        <td>
+          <span class="alert alert-info rounded-pill "
+                >Onboarding</span
+            >
+        </td>
+        <td>Junior</td>
+        <td>          <button type="button" class="btn btn-outline-info">Edit</button>
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d-flex align-items-center">
+            <img
+                src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                class="rounded-circle"
+                alt=""
+                style="width: 45px; height: 45px"
+                />
+            <div class="ms-3">
+              <p class="fw-bold mb-1">Kate Hunington</p>
+              <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <p class="fw-normal mb-1">Designer</p>
+          <p class="text-muted mb-0">UI/UX</p>
+        </td>
+        <td >
+          <span  class="alert alert-warning rounded-pill ">Awaiting</span>
+        </td>
+        <td>Senior</td>
+        <td>
+          <button type="button" class="btn btn-outline-info">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- end table -->
+
+
+
+
+
+  <div class="row my-5">
+    <div class="col-md-6 mb-3 my-5">
       <div class="card h-100">
         <div class="card-header">
           <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
@@ -59,16 +173,129 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6 mb-3">
-      <div class="card h-100">
+    
+    <!-- check table -->
+    <div class="col-md-6 mb-3 my-5">
+      <table class="table table-hover ">
+        <thead style="font-size: 12px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';" >
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Product Detail Views</th>
+            <th scope="col">Unique Purchases</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Product Revenue</th>
+            <th scope="col">Avg. Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <th scope="row"> <div class="form-check" style="font-size: 20px;">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            </div>
+    </th>
+            <td>18,492</td>
+            <td>228</td>
+            <td>350</td>
+            <td>$4,787.64</td>
+            <td>$13.68</td>
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check" style="font-size: 20px;">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            </div></th>
+            <td>
+              <span class="text-danger">
+                <i class="fas fa-caret-down me-1"></i><span>-48.8%%</span>
+              </span>
+            </td>
+            <td>
+              <span class="text-success">
+                <i class="fas fa-caret-up me-1"></i><span>14.0%</span>
+              </span>
+            </td>
+            <td>
+              <span class="text-success">
+                <i class="fas fa-caret-up me-1"></i><span>46.4%</span>
+              </span>
+            </td>
+            <td>
+              <span class="text-success">
+                <i class="fas fa-caret-up me-1"></i><span>29.6%</span>
+              </span>
+            </td>
+            <td>
+              <span class="text-danger">
+                <i class="fas fa-caret-down me-1"></i><span>-11.5%</span>
+              </span>
+            </td>
+          </tr>
+          <tr >
+            <th scope="row"> <div class="form-check" style="font-size: 20px;">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            </div>
+    </th>
+            <td>18,492</td>
+            <td>228</td>
+            <td>350</td>
+            <td>$4,787.64</td>
+            <td>$13.68</td>
+          </tr>
+          <tr>
+            <th scope="row"><div class="form-check" style="font-size: 20px;">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            </div></th>
+            <td>
+              <span class="text-danger">
+                <i class="fas fa-caret-down me-1"></i><span>-17,654</span>
+              </span>
+            </td>
+            <td>
+              <span class="text-success">
+                <i class="fas fa-caret-up me-1"></i><span>28</span>
+              </span>
+            </td>
+            <td>
+              <span class="text-success">
+                <i class="fas fa-caret-up me-1"></i><span>111</span>
+              </span>
+            </td>
+            <td>
+              <span class="text-success">
+                <i class="fas fa-caret-up me-1"></i><span>$1,092.72</span>
+              </span>
+            </td>
+            <td>
+              <span class="text-danger">
+                <i class="fas fa-caret-down me-1"></i><span>$-1.78</span>
+              </span>
+            </td>
+          </tr>
+          <tr >
+            <th scope="row"> <div class="form-check" style="font-size: 20px;">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+            </div>
+    </th>
+            <td>18,492</td>
+            <td>228</td>
+            <td>350</td>
+            <td>$4,787.64</td>
+            <td>$13.68</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <div class="card h-100">
         <div class="card-header">
           <span class="me-2"><i class="bi bi-bar-chart-fill"></i></span>
           Area Chart Example
         </div>
         <div class="card-body">
             <app-bar-chart></app-bar-chart>
+            
           <canvas class="chart" width="400" height="90"></canvas>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
+
+<!-- check table end -->
+

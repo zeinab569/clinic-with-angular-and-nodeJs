@@ -167,10 +167,12 @@ body{
     background: rgb(40, 68, 92);
     
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right bottom, rgb(111, 166, 214), rgb(92, 62, 143));
+    background-image: linear-gradient(to bottom right, #7fd7f3, #3084b1);    margin: 0px auto;
+
+    /* background: -webkit-linear-gradient(to right bottom, rgb(111, 166, 214), rgb(92, 62, 143)); */
     
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: -webkit-linear-gradient(#6cbcc5, #114d59ce);
+    /* background: -webkit-linear-gradient(#6cbcc5, #114d59ce); */
    
     height: 100%;
     border-right: 1px solid rgb(128, 128, 128);

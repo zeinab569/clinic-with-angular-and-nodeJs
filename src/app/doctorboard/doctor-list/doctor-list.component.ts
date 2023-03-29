@@ -13,7 +13,7 @@ export class DoctorListComponent {
   constructor(public doctorService:DoctorService,activatedRoute:ActivatedRoute,public router:Router){}
   doc: Doctor[]=[];
   flag=false;
-  currentDoc:Doctor=new Doctor(0,"","","","","","","",0,0,"",0,0,0,0,0,"","","","");
+  currentDoc:Doctor=new Doctor(0,"","","","","","","",0,0,"",0,0,0,0,0,"","","","","",0);
   delete(id:Number){
     if(confirm('are you sure?!')){
       this.doctorService.deleteById(id).subscribe(a=>{
@@ -45,14 +45,20 @@ save(current:Doctor){
    console.log(this.currentDoc);
 }
 
-update(current:Doctor){
-  console.log(this.doc);
-  this.doctorService.edit(current).subscribe(data=>{
-    // this.doc=data;
-          this.router.navigateByUrl("/addDoctor")
-          console.log(data);
-        })
- }
+// update(current:Doctor){
+//   console.log(this.doc);
+//   this.doctorService.edit(current).subscribe(data=>{
+//     // this.doc=data;
+//           this.router.navigateByUrl("/doctor/gitdoctors")
+//           console.log(data);
+//         })
+//  }
+
+ thedite(employee:Doctor){
+  this.router.navigateByUrl("/doctor/edit")
+  return this.E2=employee;
+}
+
   ngOnInit(){
     
       this.doctorService.getAll().subscribe(data=>{
@@ -61,4 +67,6 @@ update(current:Doctor){
   // console.log(this.doc)
      }); 
     }
+    public  E2:any;
+
 }
