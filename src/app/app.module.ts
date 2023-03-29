@@ -34,55 +34,51 @@ import{PatientdashboardModule}from'./patientdashboard/patientdashboard.module'
 import{PrescrptionModule}from'./prescrption/prescrption.module'
 
 import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
+// import { DoctorboardModule_1 as DoctorboardModule } from "./doctorboard/doctorboard.module";
 
 
 
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    RegisterComponent,
-    CheckroleComponent,
-    NotfoundComponent,
-  
-    
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    
-    FormsModule,
-    HttpClientModule,
-    NgbModule,
-    // DoctorboardModule,
-    // AdminboardModule,
-    CommonModule,
-    BrowserAnimationsModule,
-    ReactiveFormsModule,
-    MatSnackBarModule,
-    SharedModule,
-    MatRadioModule ,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatButtonModule,
-    MatIconModule,
-    AppRoutingModule,
-    MedicalhistoryModule
-  
-    // PatientModule,
-   , MatDialogModule,
-    // PatientdashboardModule,
-    PatientRoutingModule,
-    PatientDashRoutingModule,
-    // PrescrptionModule,
-    PrescrptionRoutingModule
+    declarations: [
+        AppComponent,
+        LoginComponent,
+        RegisterComponent,
+        CheckroleComponent,
+        NotfoundComponent,
+    ],
+    providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }, AuthGuard],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        HttpClientModule,
+        NgbModule,
+        DoctorboardModule,
+        AdminboardModule,
+        CommonModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule,
+        MatSnackBarModule,
+        SharedModule,
+        MatRadioModule,
+        MatToolbarModule,
+        MatSidenavModule,
+        MatListModule,
+        MatButtonModule,
+        MatIconModule,
+        AppRoutingModule,
+        MedicalhistoryModule
+        // PatientModule,
+        ,MatDialogModule,
+        // PatientdashboardModule,
+        PatientRoutingModule,
+        PatientDashRoutingModule,
+        // PrescrptionModule,
+        PrescrptionRoutingModule,
    
-    
-  ],
-  providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor , multi: true},AuthGuard],
-  bootstrap: [AppComponent]
+    ]
 })
 export class AppModule { }

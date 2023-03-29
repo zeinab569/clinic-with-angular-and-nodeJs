@@ -13,7 +13,7 @@ export class PatientsviewComponent {
      constructor(public patientService:PatientService,activatedRoute:ActivatedRoute,public router:Router){}
      doc: Patient[]=[];
      flag=false;
-     currentDoc:Patient=new Patient(0,"","",0,"","","","","","",0,0,0);
+     currentDoc:Patient=new Patient(0,"","",0,"",{city:"",street:"",building:0},"","",0,"","");
    save(current:Patient){
       this.flag=true;
       this.currentDoc=current;
