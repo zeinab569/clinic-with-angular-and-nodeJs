@@ -1,0 +1,36 @@
+
+<section >
+    <div class="container" style="margin-left: 230px; margin-right: 3000 px;" >
+        <div class="row" >
+            <div class="col-lg-12 mb-4 mb-sm-5">
+                <div class="card card-style1 border-0">
+                    <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <img src={{pateint.img}} alt="..." height="100%" width="50%">
+                            </div>
+                            <div class="col-lg-6 px-xl-10">
+                                <div class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
+                                    <h1 class="h2 text-white mb-0">{{pateint.firstName}}  {{pateint.lastName}}</h1>
+                                    <span class="text-primary">{{pateint.age}} Years</span>
+                                </div>
+                                <ul class="list-unstyled mb-1-9">
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Address:</span> {{pateint.address.city}},{{pateint.address.street}}</li>
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Gender:</span> {{pateint.gender}}</li>
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Insurance Number:</span>{{pateint.insuranceNumber}} </li>
+                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Email:</span> {{pateint.email}}</li>
+                                    <li class="display-28"><span class="display-26 text-secondary me-2 font-weight-600">Phone:</span> {{pateint.phoneNumber}}</li>
+                                </ul>
+                                <ul class="social-icon-style1 list-unstyled m-0 ps-0" >
+                                  <a [routerLink]="['/updatePateint',pateint._id]"><i class="fas fa-edit" style="color: blue;"></i></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+           
+        </div>
+    </div>
+</section>

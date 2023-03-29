@@ -1,0 +1,86 @@
+<!-- <div class="alert alert-info">
+ 
+    <ul>
+        <li>Name<input type="text" [(ngModel)]="currentDoc.fullName"></li>
+        <li>userName<input type="text" [(ngModel)]="currentDoc.userName"></li>
+        <li>Email <input type="text"  [(ngModel)]="currentDoc.email" ></li>
+
+        <li>Phone <input type="text"  [(ngModel)]="currentDoc.phoneNumber" ></li>
+        <li>Salary <input type="text"  [(ngModel)]="currentDoc.salary" ></li>
+
+    
+        <li>deptId <input type="text"  [(ngModel)]="currentDoc.departmentId" ></li>
+
+    </ul>
+    
+   <button (click)="save()" class="btn btn-danger"> Save</button>
+  </div>
+   -->
+
+
+   <div class="main" >
+    <div class="title" style="font-family: 'Times New Roman', Times, serif;">Edit Doctor</div>
+
+<div class="row">
+      <div class="col-2"> <label>ID</label><input class="input" type="text" placeholder="ID" [(ngModel)]="currentDoc._id" />
+      </div>
+      <div class="col-4">
+        <label>First name</label><input class="input" type="text" placeholder="fullName" [(ngModel)]="currentDoc.fullName" />
+      </div>
+      <div class="col-6">
+        <label>Email</label> <input class="input" type="text" placeholder=" email" [(ngModel)]="currentDoc.email" />
+      </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <label>user name</label><input class="input" type="text" placeholder=" userName"  [(ngModel)]="currentDoc.userName"/>
+  </div>
+  <div class="col-6">
+    <label>Password</label> <input  class="input" type="text" placeholder=" Password" [(ngModel)]="currentDoc.password"/>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+      <label>City</label><input class="input" type="text" placeholder=" city" [(ngModel)]="currentDoc.city" />
+    </div>
+    <div class="col-4">
+      <label>street</label><input class="input" type="text" placeholder=" street" [(ngModel)]="currentDoc.street" />
+    </div>
+    <div class="col-4">
+      <label>building</label><input class="input" type="text" placeholder=" building" [(ngModel)]="currentDoc.building" />
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-6" id="phone">
+    <label >phoneNumber</label> <input class="input" type="text" placeholder="xxx-xxxx-xxxx"  [(ngModel)]="currentDoc.phoneNumber" />
+  </div>
+</div>
+
+    <div class="row">
+      <div class="col-6">
+        <label>age</label><input class="input" type="text" placeholder="age"  [(ngModel)]="currentDoc.age" />
+      </div>
+
+      <div class="col-6">
+        <label>salary</label>
+        <input class="input" type="text" placeholder="10000$" [(ngModel)]="currentDoc.salary" />
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-4">
+        <label>Department Id</label><input class="input" type="text" placeholder="departmentId" [(ngModel)]="currentDoc.departmentId" />
+        </div>
+        <div class="col-4">
+          <label>Clinic Id</label><input class="input" type="text" placeholder="clinicId" [(ngModel)]="currentDoc.clinicId" />
+          </div>
+          <div class="col-4">
+            <label>prescreption Id</label><input class="input" type="text" placeholder="prescreption" [(ngModel)]="currentDoc.prescreption" />
+            </div>
+    </div>
+    <button class="btn btn-outline-info my-4 px-5 text-light" (click)="update(currentDoc)">Save</button>
+  </div>

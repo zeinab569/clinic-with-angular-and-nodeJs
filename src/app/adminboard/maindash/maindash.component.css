@@ -1,0 +1,26 @@
+#first{
+    border: none;
+    border-radius: 20px;
+    box-shadow: none;
+  
+}
+#first:hover{
+    border: 1px solid rgb(205, 248, 255);
+    box-shadow: 2px 2px 5px gray;
+}
+#tt{
+    font-size: 26px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    color: rgb(131, 133, 133);
+}
+.ntable{
+    background-color: aqua;
+    margin: 30px auto;
+    box-shadow: 1px 1px 5px rgb(142, 227, 224);
+
+}
+span{
+    padding: 3px;
+}

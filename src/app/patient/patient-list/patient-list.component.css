@@ -1,0 +1,37 @@
+body {
+    background: #c0c5e8;
+    background: -webkit-linear-gradient(to right, #4f62b8, #233eba);
+    background: linear-gradient(to right, #1e23ac, #4054ab);
+    min-height: 100vh;
+}
+.box
+{
+    box-shadow: 1px 3px 6px 0 rgb(194, 199, 232);
+    border-radius: 30px;
+    margin-left: 5%;
+    
+    
+}
+.social-link {
+    width: 30px;
+    height:30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+    background: #ddd;
+    text-decoration: none;
+    color: #555;
+}
+.custom-modalbox
+{
+    background-color: blue;
+  max-width: none !important;
+}

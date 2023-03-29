@@ -3,15 +3,14 @@ export class Patient {
         public _id:number,
         public firstName:string,
         public lastName:string,
-        public age:Number,
+        public age:number,
+        public gender:string, 
+        public address:{city:string,street:string,building:number},
         public email:string,
-        public gender:string,
-        public address:any,
         public insuranceNumber:string,
+        public insuranceCompany:number,
         public phoneNumber:string,
-        public appointmentId:any,
-        public prescriptionId:number,
-        public healthRecordId:number,
-        public clinicId:number,
-    ){}
+        public img:any
+        )
+     {}
 }

@@ -12,7 +12,7 @@ export class MedicalhistoryComponent {
     // @Input() id:Number=0;
     MHistoryAll:MedicalHistory[]=[];
 
-    mhistory:MedicalHistory=new MedicalHistory("","","",0,0,0,"");
+    mhistory:MedicalHistory=new MedicalHistory("","","",0,0,0,"",0,"","");
     
     constructor( public medicalHistoryService:MedicalHistoryService,public activatedRoute:ActivatedRoute,public router:Router){}
     
