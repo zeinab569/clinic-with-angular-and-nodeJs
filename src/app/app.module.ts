@@ -25,6 +25,7 @@ import { MatButtonModule} from '@angular/material/button';
 import { MatIconModule} from '@angular/material/icon';
 import { CheckroleComponent } from './auth/checkrole/checkrole.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
 
 
 
@@ -56,7 +57,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     MatListModule,
     MatButtonModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MedicalhistoryModule
    
     
   ],

@@ -10,14 +10,10 @@ import { PatientService } from 'src/app/_sevices/patient.service';
 })
 export class PatientsviewComponent {
     // @Output() onStdEdit:EventEmitter<MedicalHistory>=new EventEmitter<MedicalHistory>();
- 
- 
-   
      constructor(public patientService:PatientService,activatedRoute:ActivatedRoute,public router:Router){}
      doc: Patient[]=[];
      flag=false;
      currentDoc:Patient=new Patient(0,"","",0,"","","","","","",0,0,0);
- 
    save(current:Patient){
       this.flag=true;
       this.currentDoc=current;

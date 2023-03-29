@@ -5,6 +5,7 @@ import { AuthGuard } from './shared/auth.guard';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ViewMedicalHistoryComponent } from './medicalhistory/view-medical-history/view-medical-history.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'doctor', loadChildren:()=>import('./doctorboard/doctorboard.module').then(m=>m.DoctorboardModule)  },
  
   {path: 'login', component: LoginComponent},
+  {path: 'view', component: ViewMedicalHistoryComponent},
   {path: 'signup', component: RegisterComponent},
   {path:"**",component:NotfoundComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
