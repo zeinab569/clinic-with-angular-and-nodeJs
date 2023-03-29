@@ -32,6 +32,9 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'view', component: ViewMedicalHistoryComponent},
   {path: 'signup', component: RegisterComponent},
+  { path: 'medicine', loadChildren:()=>import('./medicine/medicine.module').then(m=>m.MedicineModule) },
+  { path: 'insurance', loadChildren:()=>import('./insurance/insurance.module').then(m=>m.InsuranceModule)  },
+
   {path:"**",component:NotfoundComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   

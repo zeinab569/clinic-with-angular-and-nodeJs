@@ -1,0 +1,23 @@
+<div class="bx bx-danger">
+
+  <label style="color: teal;font-weight: 500;"
+  for="firstname" >Id</label> &nbsp;<input type="text" [(ngModel)]="med._id" >
+  <label style="color: teal;font-weight: 500;"
+  for="firstname" >Name</label> &nbsp;<input type="text" [(ngModel)]="med.Name" >
+  <label style="color: teal;font-weight: 500;"
+  for="firstname" >productionDate</label>
+  <input type="text" [(ngModel)]="med.production_Date" >
+
+  <label style="color: teal;font-weight: 500;"
+  for="firstname" >ExpiaryDate</label>
+
+  <input type="text" [(ngModel)]="med.expiary_Date" >
+  <label style="color: teal;font-weight: 500;"
+  for="firstname" >price</label> &nbsp;<input type="text" [(ngModel)]="med.price" >
+  <label style="color: teal;font-weight: 500;"
+  for="firstname" >Recommendation</label> &nbsp;<input type="text" [(ngModel)]="med.Recommendation">
+  <label style="color: teal;font-weight: 500;"
+  for="firstname" >quantity</label> &nbsp;<input type="text" [(ngModel)]="med.quantity" >
+  </div>
+  <br> <br>
+  <button  class="btn btn-info"    (click)="save()"> save</button>
