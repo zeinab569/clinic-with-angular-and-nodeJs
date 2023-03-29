@@ -16,7 +16,6 @@ import { AdminboardModule } from '../adminboard/adminboard.module';
 import { EditComponent } from './edit/edit.component';
 
 
-
 @NgModule({
   declarations: [
     ProfileComponent,
