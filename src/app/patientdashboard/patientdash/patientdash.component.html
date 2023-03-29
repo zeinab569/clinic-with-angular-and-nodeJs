@@ -1,0 +1,51 @@
+
+<div class="topnav shadow p-1">
+   
+       
+    <div  style="float: right; ">
+        
+        
+            <a  [routerLink]="['/profilePatient',patient._id]"><img src={{patient.img}}  class="rounded" style="width: 50px ;height: 50px; border-radius: 50%;"></a>
+             
+      </div>
+
+    <span class="menu" (click)="openNav(true)"><i class="fas fa-bars" style='color:rgb(24, 223, 206)'></i></span>
+  </div>
+  <!-- left sidebar nav  -->
+  
+  <div  class="sidebar shadow p-2 mt=0"  id="sidebar"  [ngStyle]="responsiveMenu">
+    <ul>
+        <!-- <li><a href="../../adminboard/maindash/maindash.component.html" ><i class="fa fa-home" aria-hidden="true" ></i> Dashboard</a></li> -->
+        <hr align="center">
+        <li><a  [routerLink]="['/profilePatient',patient._id]"><i class="fa fa-user"></i> Profile</a></li>
+        <hr align="center">
+        <li><a  ><i class="	fa fa-user-md"></i> Doctors</a></li>
+        <hr align="center">
+        <li><a  [routerLink]="['/patientPrescrptions',patient._id]"><i class="fa fa-hospital-o"></i> Prescrptions</a></li>
+        <hr align="center">
+        <li><a ><i class="fa fa-h-square"></i> Medical History</a></li>
+        <hr align="center">
+        <li>
+            <a ><i class="fa fa-calendar"></i> Appointments <i class="bi bi-arrow-right icon"></i></a>
+            <ul class="dropdow-container">
+                <li><a href="#">Unsign</a></li>
+                <li><a href="#">Complete</a></li>
+            </ul>
+        </li>
+        <hr align="center">
+        <li>
+            <a [routerLink]="['/patientCreation']"><i class="	fa fa-heartbeat"></i> Add Your Family <i class="bi bi-arrow-right icon"></i></a>
+        </li>
+        <hr align="center">
+        <li>
+            <a href="#"><i class="fas fa-file-invoice"></i> Invoice <i class="bi bi-arrow-right icon"></i></a>
+        </li>
+        <hr align="center">
+        <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+  
+    </ul>
+  </div>
+  <div  class="main-content" [ngStyle]="responsiveContent">
+    <router-outlet></router-outlet>
+  </div>
+  

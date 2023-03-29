@@ -1,0 +1,103 @@
+<div class="wrapper">
+    <div class="prescription_form">
+        <table class="prescription"  border="1"  >
+            <tbody>
+                <tr height="15%">
+                    <td colspan="2">
+                        <div class="header">
+                            <div class="logo">
+                                <img
+                                    src="https://seeklogo.com/images/H/hospital-clinic-plus-logo-7916383C7A-seeklogo.com.png" />
+
+                            </div>
+                            <div class="credentials"> 
+                                <h4>Doctor Name</h4>
+                                <p>{{presdetails.doctor_id.fullName}}</p>
+                                <br />
+                                
+                                <br/>
+                                
+                            </div>
+                            <div class="credentials">
+                                <h4>Patiet Name</h4>
+                                <p>{{presdetails.patient_id.firstName}}{{presdetails.patient_id.lastName}}</p>
+                                <br />
+                                
+                                <br/>
+                                
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="40%">
+                        <div class="desease_details">
+                            <div class="symptoms">
+                                <h4 class="d-header">Dosage</h4>
+                                <ul class="symp" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
+                                    contenteditable="true" >
+                                </ul>
+                            </div>
+                            <div class="tests">
+                                <h4 class="d-header">Department</h4>
+                                <ul class="tst" data-toggle="tooltip" data-placement="bottom" title="Click to edit."
+                                    contenteditable="true">
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </td>
+                    <td width="60%" valign="top">
+                        <span style="font-size: 3em;">R<sub>x</sub></span>
+                        <hr />
+                        <div class="medicine">
+                            <section >
+                                <ul *ngFor="let item of presdetails.medicine ">
+                                    <li>Medicine:{{item.id.Name}}</li>
+                                    <li>Quantity:-{{item.quantity}}</li>
+                                    <li>Period:{{item.period}}</li>
+                                    <hr>
+                                </ul>
+                                <ol *ngIf="addFlag" >
+                                    <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+                                        <div >
+                                            <label>Medicine Name:-</label>
+                                            <select
+                                              class="custom-select mb-3"
+                                              formControlName="id"
+                                             
+                                            >
+                                              <option value="">Choose medicine</option>
+                                              <option 
+                                              *ngFor="let medicine of medicinces" [value]="medicine.id">
+                                                 {{ medicine.Name}}
+                                              </option>
+                                            </select><br>
+                                            <label>Medicine Quantity:- </label>
+                                            <input type="text" formControlName="quantity" style="border: none;"><br>
+                                            <label>Medicine Period:-</label>
+                                            <input type="text" formControlName="period" style="border: none;"><br>
+                                            <button type="submit" class="btn btn- btn-lg btn-block">
+                                              Add.
+                                            </button>
+                                          </div>
+                                    </form>
+                                    
+                                </ol>
+                            </section>
+                            <button  (click)="addFlag=true"  style="border: none; background-color: white;text-align: left;" data-toggle="tooltip" data-placement="left"
+                               
+                            title="Click anywhere on the blank space to add more.">Click to add...</button>
+                        </div>
+                    </td>
+                    <td valign="bottom" (click)=" updatePrescription()">
+                        <button id="adv_save"  class="btn btn-sm btn-success save">Save</button>
+                    </td>
+                </tr>
+               
+            </tbody>
+        </table>
+        
+       
+    </div>
+  </div>

@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import{PatientRoutingModule}from'./patient/patient-routing.module';
+import{PrescrptionRoutingModule}from'./prescrption/prescrption-routing.module'
+import {PatientDashRoutingModule}from './patientdashboard/patientdash-routing.module'
+import { MatDialogModule} from '@angular/material/dialog';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ReactiveFormsModule ,FormsModule } from '@angular/forms';
@@ -17,6 +21,7 @@ import { from } from 'rxjs';
 import { AuthInterceptor } from './_helper/auth-interceptor';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SharedModule } from './shared/shared.module';
+import{PatientModule}from'./patient/patient.module'
 import { MatRadioModule } from '@angular/material/radio';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule} from '@angular/material/sidenav';
@@ -26,6 +31,9 @@ import { MatIconModule} from '@angular/material/icon';
 import { CheckroleComponent } from './auth/checkrole/checkrole.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
+import{PatientdashboardModule}from'./patientdashboard/patientdashboard.module'
+import{PrescrptionModule}from'./prescrption/prescrption.module'
+
 
 
 
@@ -36,16 +44,18 @@ import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
     RegisterComponent,
     CheckroleComponent,
     NotfoundComponent,
+  
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
     FormsModule,
     HttpClientModule,
     NgbModule,
-    DoctorboardModule,
-    AdminboardModule,
+    // DoctorboardModule,
+    // AdminboardModule,
     CommonModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
@@ -59,6 +69,14 @@ import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
     MatIconModule,
     AppRoutingModule,
     MedicalhistoryModule
+  
+    // PatientModule,
+   , MatDialogModule,
+    // PatientdashboardModule,
+    PatientRoutingModule,
+    PatientDashRoutingModule,
+    // PrescrptionModule,
+    PrescrptionRoutingModule
    
     
   ],
