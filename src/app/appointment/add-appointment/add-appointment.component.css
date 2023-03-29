@@ -1,0 +1,39 @@
+
+p{
+    color: rgb(218, 155, 74);
+}
+.alert
+{
+  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    height: 58%;
+    width: 60%;
+    margin:20px;
+    padding: 20px;
+}
+.col-10
+{
+    width: 40%;
+}
+input,select
+{
+    width: 25%;
+    margin: 10px;
+}
+label
+{
+    margin: 10px;
+}
+button
+{
+    float: right;
+    padding: 10px 15px;
+    margin-top: 20px ;
+    margin-bottom: 5px;
+    background-color: antiquewhite;
+    border: none;
+}

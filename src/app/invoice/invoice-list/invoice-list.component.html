@@ -1,0 +1,46 @@
+  
+  <div class="wrapper">
+    <p>Add</p>
+  <button type="button" class="btn btn-primary rounded-circle add" (click)="add()">+</button>
+  </div>
+
+<br><br>
+<h3>Invoice List</h3>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr style="background-color: bisque;">
+        <th>ID</th>
+        <th>Employee </th>
+        <th>Patient </th>
+        <th>Date</th>
+        <th>Amount</th>
+        <th>Discount</th>
+        <th>Payment Way</th>
+        <th>Appointment </th>
+        <th>Service </th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of invoiceList">
+        <td>{{item._id}}</td>
+        <td>{{item.employeeID}}</td>
+        <td>{{item.patientID.firstName}}</td>
+        <td>{{item.date}}</td>
+        <td>{{item.amount}}</td>
+        <td>{{item.remainingAmount}}</td>
+        <td>{{item.paymentWay}}</td>
+        <td>{{item.appointmentID}}</td>
+        <td>{{item.serviceID}}</td>
+        <td class="buttons">
+          <button class="btn btn-success btn-sm rounded-0" type="button" (click)="edit(item._id)" data-toggle="tooltip" data-placement="top" title="Edit">Edit</button>
+          <button class="btn btn-danger btn-sm rounded-0" type="button" (click)="delete(item._id)" data-toggle="tooltip" data-placement="top" title="Delete">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+

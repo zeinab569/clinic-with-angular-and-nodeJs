@@ -1,0 +1,14 @@
+
+.alert
+{
+  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    height: 58%;
+    width: 60%;
+    margin:20px;
+    padding: 20px;
+}

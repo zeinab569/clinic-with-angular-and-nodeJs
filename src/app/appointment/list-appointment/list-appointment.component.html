@@ -1,0 +1,45 @@
+  
+  <div class="wrapper">
+    <p>Add</p>
+  <button type="button" class="btn btn-primary rounded-circle add" (click)="add()">+</button>
+  </div>
+
+<br><br>
+<h3>Appointment List</h3>
+
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr style="background-color: bisque;">
+        <th>ID</th>
+        <th>Employee </th>
+        <th>Patient </th>
+        <th>Doctor </th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Department </th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of appointmentList">
+        <td>{{item._id}}</td>
+        <td>{{item.employeeID}}</td>
+        <td >{{item.patientID}}</td>
+        <td>{{item.doctorID}}</td>
+        <td>{{item.date}}</td>
+        <td>{{item.time}}</td>
+        <td>{{item.departmentID}}</td>
+        <td>{{item.status}}</td>
+        <td class="buttons">
+          <button class="btn btn-success btn-sm rounded-0" type="button" (click)="edit()" data-toggle="tooltip" data-placement="top" title="Edit">Edit</button>
+          <button class="btn btn-danger btn-sm rounded-0" type="button" (click)="delete(item._id)" data-toggle="tooltip" data-placement="top" title="Delete">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
