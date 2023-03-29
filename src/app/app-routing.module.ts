@@ -15,6 +15,12 @@ import { PatientupdateComponent } from './patient/patientupdate/patientupdate.co
 import { PateintPrescrptionsComponent } from './prescrption/pateint-prescrptions/pateint-prescrptions.component';
 import { PrescriptionDetailsComponent } from './prescrption/prescription-details/prescription-details.component';
 import { ViewMedicalHistoryComponent } from './medicalhistory/view-medical-history/view-medical-history.component';
+import { EditAppointmentComponent } from './appointment/edit-appointment/edit-appointment.component';
+import { AddAppointmentComponent } from './appointment/add-appointment/add-appointment.component';
+import { EditInvoiceComponent } from './invoice/editInvoice/editInvoice.component';
+import { ListAppointmentComponent } from './appointment/list-appointment/list-appointment.component';
+import { InvoiceListComponent } from './invoice/invoice-list/invoice-list.component';
+import { AddInvoiceComponent } from './invoice/add-invoice/add-invoice.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -29,11 +35,18 @@ const routes: Routes = [
           {path:"patientCreation",component:CreatepatientComponent},
           {path:"patientPrescrptions/:id",component:PateintPrescrptionsComponent},
           {path:'prescrptiondetails/:id',component:PrescriptionDetailsComponent},
+          {path:"appointmentList",component:ListAppointmentComponent},
+          {path:"invoiceList",component:InvoiceListComponent},
+          {path:"addInvoice",component:AddInvoiceComponent},
+          {path:"editInvoice",component:EditInvoiceComponent},
+          {path:"addAppointment",component:AddAppointmentComponent},
+          {path:"editAppointment",component:EditAppointmentComponent},
   {path: 'login', component: LoginComponent},
   {path: 'view', component: ViewMedicalHistoryComponent},
   {path: 'signup', component: RegisterComponent},
   {path:"**",component:NotfoundComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+
   
 ];
 

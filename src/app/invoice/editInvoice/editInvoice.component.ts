@@ -21,7 +21,7 @@ export class EditInvoiceComponent implements OnInit {
     if(confirm("are you sure")){
       this.invoiceservice.editInvoiceRe_Amount(this.invoice).subscribe(data=>{
         console.log(data)
-        this.router.navigateByUrl("")
+        this.router.navigateByUrl("invoiceList")
       } )
     }
   }

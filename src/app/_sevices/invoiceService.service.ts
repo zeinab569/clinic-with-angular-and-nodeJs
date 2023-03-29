@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Invoice } from '../models/Invoice';
+import { Invoice } from '../_models/Invoice';
 
 
 @Injectable({
