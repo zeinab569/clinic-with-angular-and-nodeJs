@@ -30,9 +30,11 @@ import { MatButtonModule} from '@angular/material/button';
 import { MatIconModule} from '@angular/material/icon';
 import { CheckroleComponent } from './auth/checkrole/checkrole.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
 import{PatientdashboardModule}from'./patientdashboard/patientdashboard.module'
 import{PrescrptionModule}from'./prescrption/prescrption.module'
+
+import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
+
 
 
 
