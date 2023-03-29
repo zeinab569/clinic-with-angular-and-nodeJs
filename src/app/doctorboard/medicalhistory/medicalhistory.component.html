@@ -22,13 +22,13 @@
             <label class="one"> Name </label>
                 <div>
                     <label >ID</label>
-                    <input type="text" [(ngModel)]="mhistory._id" >
+                    <input type="text" [(ngModel)]="mhistory._id" readonly>
                     <label>First Name</label>
-                    <input  value="" [(ngModel)]="mhistory.patientId.firstName"  >
+                    <input  value="" [(ngModel)]="mhistory.patientId.firstName"  readonly>
                     <label >Last Name</label>
-                    <input  value="" [(ngModel)]="mhistory.patientId.lastName"  >
+                    <input  value="" [(ngModel)]="mhistory.patientId.lastName" readonly >
                     <label  >Doctor Name</label>
-                    <input value="" [(ngModel)]="mhistory.doctorId.fullName" >
+                    <input value="" [(ngModel)]="mhistory.doctorId.fullName" readonly>
                 </div>
         </li>
         <!-- gender -->
@@ -55,16 +55,17 @@
         <!-- medicinesbefore -->
         <li >
             <label class="one" > medicinesbefore: </label>
-            <input placeholder="medcine name" value="" [(ngModel)]="mhistory.medicinesbefore.name">
-            <input placeholder="quantity" value="" style="width: 15%;" [(ngModel)]="mhistory.medicinesbefore.quantity">
-            from<input placeholder="3/1/2020" value="" style="width: 15%;" [(ngModel)]="mhistory.medicinesbefore.from">
-            to<input placeholder="to" value="" style="width: 15%;" [(ngModel)]="mhistory.medicinesbefore.to">
+            <input placeholder="medcine name" value="" [(ngModel)]="mhistory.name">
+            <input placeholder="quantity" value="" style="width: 15%;" [(ngModel)]="mhistory.quantity">
+            <input type="date" value="" [(ngModel)]="mhistory.from" >
+            <label  >to</label>
+            <input type="date" value="" [(ngModel)]="mhistory.to" >
         </li>
         <!-- bloodType -->
         <li >
             <label class="one"> Blood Type </label>
             <div> 
-                <select [(ngModel)]="mhistory.bloodType" >
+                <select [(ngModel)]="mhistory.bloodType"  readonly>
                     <option value="AB+">AB+</option>
                     <option value="A+">A+</option>
                     <option value="B+">B+</option>

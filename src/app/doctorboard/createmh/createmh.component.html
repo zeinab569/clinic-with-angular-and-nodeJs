@@ -55,13 +55,14 @@
                   <input  [(ngModel)]="mh._id" >
                   <label >ID patient</label>
                   <input  [(ngModel)]="mh.patientId ">
+<br>
+                  <label>Doctor Id</label>
+                  <input  value=""   [(ngModel)]="mh.doctorId">
 
-                  <label>P firstName</label>
-                  <input  value=""   [(ngModel)]="mh.patientId.firstName">
                   <!-- <label >quantity </label>
                   <input  value="" > -->
-                  <label>doctor name</label>
-                  <input  value=""   [(ngModel)]="mh.doctorId.fullName">
+                  <label>medicine Id</label>
+                  <input  value=""   [(ngModel)]="mh.medicine">
                   
               </div>
       </li>
@@ -77,26 +78,26 @@
          
       </li>
       <!-- phone number -->
-      <li >
+      <!-- <li >
           <label class="one " > Contact Number: </label>
        <input  [(ngModel)]="mh.patientId.phoneNumber" placeholder="(000) 000-0000">
         
-      </li>
+      </li> -->
       <!-- email -->
-      <li >
+      <!-- <li >
           <label class="one"> E-mail </label>
            <input   [(ngModel)]="mh.patientId.email" placeholder="ex: myname@example.com">
-      </li>
+      </li> -->
       <hr>
       <!-- medicinesbefore -->
       <li >
           <label class="one" > medicinesbefore  name </label>
-          <input placeholder="medcine name"  [(ngModel)]="mh.medicinesbefore.name">
-          <input placeholder="quantity" value="" style="width: 15%;"  [(ngModel)]="mh.medicinesbefore.quantity">
+          <input placeholder="medcine name" value=""  [(ngModel)]="mh.name">
+          <input placeholder="quantity" value="" style="width: 15%;"  [(ngModel)]="mh.quantity">
           <label  >from</label>
-          <input type="date"  [(ngModel)]="mh.medicinesbefore.from" >
+          <input type="date" value="" [(ngModel)]="mh.from" >
           <label  >to</label>
-          <input type="date"  [(ngModel)]="mh.medicinesbefore.to" >
+          <input type="date" value="" [(ngModel)]="mh.to" >
           
       </li>
       <!-- bloodType -->
@@ -118,8 +119,8 @@
 
       <li >
           <label class="one" > If yes, please list it here </label>
-           <textarea id="input_22" style="width:60%;height:163px" >
-            
+           <textarea id="input_22" style="width:60%;height:163px" [(ngModel)]="mh.chronicdiseases">
+        
           </textarea> 
       </li>
       <li >

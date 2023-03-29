@@ -17,12 +17,13 @@
   </div>
    -->
 
+
    <div class="main" >
-    <div class="title" style="font-family: 'Times New Roman', Times, serif;">Create Doctor</div>
+    <div class="title" style="font-family: 'Times New Roman', Times, serif;">Edit Doctor</div>
 
 <div class="row">
-      <!-- <div class="col-2"> <label>ID</label><input class="input" type="text" placeholder="ID" [(ngModel)]="currentDoc._id" />
-      </div> -->
+      <div class="col-2"> <label>ID</label><input class="input" type="text" placeholder="ID" [(ngModel)]="currentDoc._id" />
+      </div>
       <div class="col-4">
         <label>First name</label><input class="input" type="text" placeholder="fullName" [(ngModel)]="currentDoc.fullName" />
       </div>
@@ -81,6 +82,5 @@
             <label>prescreption Id</label><input class="input" type="text" placeholder="prescreption" [(ngModel)]="currentDoc.prescreption" />
             </div>
     </div>
-
-    <button class="btn btn-outline-info my-4 px-5 text-light" (click)="save()">Save</button>
+    <button class="btn btn-outline-info my-4 px-5 text-light" (click)="update(currentDoc)">Save</button>
   </div>

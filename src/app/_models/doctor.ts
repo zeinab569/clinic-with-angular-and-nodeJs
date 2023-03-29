@@ -12,19 +12,17 @@ export class Doctor {
         ,public age:number
         ,public salary:number
         ,public user_role:string
-        // ,public city:String
-        // ,public street:String
-        // ,public building:Number
         ,public departmentId:Number
         ,public max_appoints:number
         ,public doctor_start:number
         ,public doctor_end:number
         ,public prescreption:number
-        ,public address:any
+        ,public city:String
         ,public appointments:any
         ,public patientid:any
         ,public clinicId:any
-        
+        ,public street:String
+        ,public building:Number
         ){}
 
 }

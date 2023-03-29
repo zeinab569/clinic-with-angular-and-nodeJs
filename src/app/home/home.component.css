@@ -125,6 +125,7 @@ border: 2px solid #fff !important; }
   -webkit-text-fill-color: transparent;
   font-family: 'Times New Roman', Times, serif;
   margin-top: 15%;
+  font-size: 35px;
 }
 .sImg{
     width: 80%;
@@ -132,7 +133,7 @@ border: 2px solid #fff !important; }
 }
 #service{
    text-align: center;
-   margin-left: 8%;
+   /* margin-left: 8%; */
    margin-bottom: 10%;
 }
 
@@ -177,8 +178,11 @@ section .section-title {
 }
 
 #team .card {
-    border: none;
+    border: 1px solid #21ceec;
     background: #ffffff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
 
 .image-flip:hover .backside,
@@ -200,6 +204,7 @@ section .section-title {
 }
 
 .mainflip {
+ 
     -webkit-transition: 1s;
     -webkit-transform-style: preserve-3d;
     -ms-transition: 1s;
@@ -210,8 +215,12 @@ section .section-title {
     transition: 1s;
     transform-style: preserve-3d;
     position: relative;
+  
 }
-
+#cardBack{
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 .frontside {
     position: relative;
     -webkit-transform: rotateY(0deg);

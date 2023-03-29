@@ -22,15 +22,17 @@
     <div class="row mt-4">
       <h4 class="text-info mx-4">Eyes Doctors(deptId=8 ^_^)</h4>
       <div class="rowposter mt-3 p-2">
-          <div class="col-md-6 col-lg-4 item" *ngFor="let n of filterDoctorWithDept(doctors,8)">
-              <div class="box">
+          <div class="col-md-6 col-lg-4 item"  *ngFor="let n of filterDoctorWithDept(doctors,8)">
+              <div class="box" id="big">
                   <img class="rounded-circle" src="../../../assets/heart.png" width="70px">
                   <p class="title">{{n.fullName}}</p>
-        <h3 class="name">{{n.patientid[0]}}</h3>
+                  <h3 class="name">{{n.email}}</h3>
+                  <h3 class="name"> <i class="fa fa-phone" style="font-size:28px;color:rgb(85, 216, 201)"></i>  {{n.phoneNumber}}</h3>
+                  <!-- <h3 class="name">{{n.city}} ,{{n.street}}</h3> -->
                  
                   <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                  <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
-                  <button type="button" class="btn btn-outline-info my-3" style="width: 60px;"  >MAke appointment</button>
+                  <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-twitter "></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-instagram"></i></a></div>
+                  <button type="button" class="btn btn-outline-success my-3">MAke appointment</button>
 
 
               </div>
@@ -43,13 +45,17 @@
         <h4 class="text-info mx-4">dentist Doctors(deptId=2 ^_^)</h4>
         <div class="rowposter mt-3 p-2">
             <div class="col-md-6 col-lg-4 item" *ngFor="let n of filterDoctorWithDept(doctors,2)">
-                <div class="box">
+                <div class="box" id="big">
                     <img class="rounded-circle" src="../../../assets/heart.png" width="70px">
-                    <h3 class="name">{{n.fullName}}</h3>
-                    <p class="title">{{n.departmentId}}</p>
+                    <p class="title">{{n.fullName}}</p>
+                    <h3 class="name">{{n.email}}</h3>
+                    <h3 class="name">{{n.phoneNumber}}</h3>
+                    <!-- <h3 class="name">{{n.city}} ,{{n.street}}</h3> -->
                    
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-instagram"></i></a></div>
+                    <button type="button" class="btn btn-outline-success my-3">MAke appointment</button>
+
                 </div>
             </div>
     
@@ -59,13 +65,18 @@
     <div class="row mt-4">
         <h4 class="text-info mx-4">dentist Doctors(deptId=1 ^_^)</h4>
         <div class="rowposter mt-3 p-2">
-            <div class="col-md-6 col-lg-4 item" *ngFor="let b of filterDoctorWithDept(doctors,1)">
-                <div class="box">
+            <div class="col-md-6 col-lg-4 item" *ngFor="let n of filterDoctorWithDept(doctors,1)">
+                <div class="box" id="big">
                     <img class="rounded-circle" src="../../../assets/heart.png" width="70px">
-                    <h3 class="name">{{b.fullName}}</h3>
-                    <p class="title">{{b.departmentId}}</p>
+                    <p class="title">{{n.fullName}}</p>
+                    <h3 class="name">{{n.email}}</h3>
+                    <h3 class="name">{{n.phoneNumber}}</h3>
+                    <!-- <h3 class="name">{{n.city}} ,{{n.street}}</h3> -->
+
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
-                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-instagram"></i></a></div>
+                    <button type="button" class="btn btn-outline-success my-3">MAke appointment</button>
+
                 </div>
             </div>
     
