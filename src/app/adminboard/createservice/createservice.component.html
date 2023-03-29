@@ -1,0 +1,39 @@
+<div role="main" >
+  
+    <ul class=" page-section " type="none">
+        <!-- first container for image   class="thef"  -->
+            <div class="row">
+                
+                    <span class="col col-lg-6">
+                        <h2 id="header_1" class="form-header" data-component="header"> Add Services</h2>
+                        <div class="themain">
+                          <div class="alert primary">
+                            <ul>
+                                 
+                                 <div>
+                                   <label>Name</label><input type="text" [(ngModel)]="serv.name"> 
+                                  </div>
+                                  <div>
+                                   <label>Price</label><input type="text" [(ngModel)]="serv.price">
+                                  </div>
+                                  <div>
+                                   <label>description</label><input type="text" [(ngModel)]="serv.description">
+                                 </div>
+                                
+                            </ul>
+                            
+                            <button (click)="save()" class="btn " id="btn"> Save</button>
+                          </div>
+                        </div>
+                    </span>
+                    
+                    <span class="col col-lg-6" id="im">
+                      <img src="../../assets/dm.jpg" class="header-logo-right">
+                    </span>
+                  
+            </div>
+  </ul>
+  </div>
+  
+  
+  

@@ -58,10 +58,14 @@ select{
 }
 .themain{
   margin-top: 30px;
+  margin-left: 55px;
 }
 #btn{
-  margin-left: 45rem;
-  background-color: rgb(22, 3, 109);
+  margin-left: 65em;
+  background-color: rgb(5, 94, 136);
   color: aliceblue;
+  font-weight: bold;
+  width: 90px;
+  height: 50px;
 }
 html { -webkit-overflow-scrolling: touch; overflow: scroll; }body { overflow: scroll; }

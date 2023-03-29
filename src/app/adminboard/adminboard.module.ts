@@ -11,6 +11,9 @@ import { ListemployeeComponent } from './listemployee/listemployee.component';
 import { EditeemployeeComponent } from './editeemployee/editeemployee.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DoctorboardModule } from '../doctorboard/doctorboard.module';
+import { CreateserviceComponent } from './createservice/createservice.component';
+import { ListserviceComponent } from './listservice/listservice.component';
+import { UpdateserviceComponent } from './updateservice/updateservice.component';
 
 
 @NgModule({
@@ -21,6 +24,9 @@ import { DoctorboardModule } from '../doctorboard/doctorboard.module';
     ProfileComponent,
     ListemployeeComponent,
     EditeemployeeComponent,
+    CreateserviceComponent,
+    ListserviceComponent,
+    UpdateserviceComponent,
     
   ],
   imports: [

@@ -18,7 +18,7 @@ body{
     background-size: cover;
   }
   label{
-    color:rgb(8, 109, 114);
+    color:rgb(16, 108, 121);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 500;
   }
@@ -58,14 +58,17 @@ body{
   }
   .themain{
     margin-top: 30px;
-    margin-left: 55px;
-
   }
   #btn{
-    margin-left: 65em;
-    background-color: rgb(10, 117, 136);
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: rgb(23, 102, 126);
     color: aliceblue;
-    width: 90px;
-  height: 50px;
+  }
+  
+  img{
+    width: 500px;
+    height: 500px;
+    border-radius: 9px;
   }
   html { -webkit-overflow-scrolling: touch; overflow: scroll; }body { overflow: scroll; }
