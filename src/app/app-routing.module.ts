@@ -21,6 +21,7 @@ import { EditInvoiceComponent } from './invoice/editInvoice/editInvoice.componen
 import { ListAppointmentComponent } from './appointment/list-appointment/list-appointment.component';
 import { InvoiceListComponent } from './invoice/invoice-list/invoice-list.component';
 import { AddInvoiceComponent } from './invoice/add-invoice/add-invoice.component';
+import { DoctorcardsComponent } from './doctorboard/doctorcards/doctorcards.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -42,6 +43,15 @@ const routes: Routes = [
           {path:"addAppointment",component:AddAppointmentComponent},
           {path:"editAppointment",component:EditAppointmentComponent},
   {path: 'login', component: LoginComponent},
+  {path:"updatePateint/:id",component:PatientupdateComponent},
+  {path:"deletePatient/:id",component:PatientdeleteComponent},
+  {path:"patientList",component:PatientListComponent},
+  {path:"patientCreation",component:CreatepatientComponent},
+  {path:"patientPrescrptions/:id",component:PateintPrescrptionsComponent},
+  {path:'prescrptiondetails/:id',component:PrescriptionDetailsComponent},
+  {path:"doctorcard", component:DoctorcardsComponent},
+  {path:"MedicalHistory/:id",component:ViewMedicalHistoryComponent }
+  ,{path: 'login', component: LoginComponent},
   {path: 'view', component: ViewMedicalHistoryComponent},
   {path: 'signup', component: RegisterComponent},
   { path: 'medicine', loadChildren:()=>import('./medicine/medicine.module').then(m=>m.MedicineModule) },

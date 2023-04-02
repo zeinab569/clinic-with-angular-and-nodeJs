@@ -17,17 +17,6 @@ export class ViewMedicalHistoryComponent {
   
   constructor( public medicalHistoryService:MedicalHistoryService,public activatedRoute:ActivatedRoute,public router:Router){}
   
-  
-  update(){
-    console.log(this.history);
-    this.medicalHistoryService.edit(this.history).subscribe(data=>{
-      // this.doc=data;
-      
-      
-            this.router.navigateByUrl("/home")
-            console.log(data);
-          })
-   }
 
   //  getOnLoad(id:number){
   //   this.medicalHistoryService.getById(id).subscribe(data=>{
@@ -50,7 +39,7 @@ export class ViewMedicalHistoryComponent {
 this.activatedRoute.params.subscribe((a)=>{
   // this.appointmentId = a['id'];
   console.log(a);
-  this.medicalHistoryService.getById(24).subscribe(data=>{
+  this.medicalHistoryService.getById(a['id']).subscribe(data=>{
     this.history=data;
     console.log(data);
 })

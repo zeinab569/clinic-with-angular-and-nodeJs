@@ -73,15 +73,14 @@ import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
         MatButtonModule,
         MatIconModule,
         AppRoutingModule,
-        MedicalhistoryModule
-        // PatientModule,
-        ,MatDialogModule,
-        // PatientdashboardModule,
+        MedicalhistoryModule,
+        PatientModule,
+        MatDialogModule,
+        PatientdashboardModule,
         PatientRoutingModule,
         PatientDashRoutingModule,
-        // PrescrptionModule,
+        PrescrptionModule,
         PrescrptionRoutingModule,
-
     ]
 })
 export class AppModule { }
