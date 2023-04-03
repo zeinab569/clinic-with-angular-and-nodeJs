@@ -1,0 +1,26 @@
+table
+{
+    margin: 20px;
+    background-color: rgb(242, 248, 255);
+}
+.add
+{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 7px;
+    float: right;
+}
+p
+{
+    margin-top: 20px;
+    float: right;
+}
+.wrapper
+{
+    margin: 9px 15px;
+}
+
+.btn-sm
+{
+    margin: 5px;
+}

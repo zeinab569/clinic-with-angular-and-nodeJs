@@ -1,0 +1,43 @@
+
+
+
+<div class="alert alert-info" role="alert">
+  <p>New Appointment:</p>
+ 
+  <div class="row">
+       <label for="" class="col-2">Patient:</label>
+      <input type="number" [(ngModel)]="appointment.patientID"  placeholder="Patient" class="col-10" name="patientID" >
+      </div>
+      <div class="row">
+      <label for="" class="col-2">Employee:</label>
+      <input type="number" [(ngModel)]="appointment.employeeID"  placeholder="Employee" class="col-10" name="employeeID">
+      </div> 
+
+      <div class="row">
+        <label for="" class="col-2">Doctor:</label>
+        <input type="number" [(ngModel)]="appointment.doctorID"  placeholder="Doctor" class="col-10" name="doctorID">
+        </div> 
+       
+      <div class="row">
+
+      </div>
+      <label for="" class="col-2">Date:</label>
+      <input type="text" [(ngModel)]="appointment.date"  placeholder="D-M-Y" class="col-6" name="date">
+      <br>
+
+      <label for="" class="col-2">time:</label>
+      <input type="text" [(ngModel)]="appointment.time"  placeholder=" HH:MM" class="col-6" name="time">
+      <br>
+
+      
+      
+
+      <label for="" class="col-2">Department:</label>
+      <input type="text" [(ngModel)]="appointment.departmentID"  placeholder="Department" class="col-6" name="departmentID">
+      <label for="" class="col-2">Statue:</label>
+      <input type="text" [(ngModel)]="appointment.status"  placeholder="Statue" class="col-6" name="statusID">
+      <br>
+
+      <button (click)="addAppointment()">Add</button>
+    </div>   
+

@@ -1,0 +1,39 @@
+
+
+<div class="alert alert-info" role="alert">
+  <p>New Invoice:</p>
+ 
+  <div class="row">
+       <label for="" class="col-2">Patient:</label>
+      <input type="number" [(ngModel)]="invoice.patientID"  placeholder="Patient" class="col-10" name="patientID" >
+      </div>
+      <div class="row">
+      <label for="" class="col-2">Employee:</label>
+      <input type="number" [(ngModel)]="invoice.employeeID"  placeholder="Employee" class="col-10" name="employeeID">
+      </div> 
+       
+      <div class="row">
+
+      </div>
+      <label for="" class="col-2">Date:</label>
+      <input type="text" [(ngModel)]="invoice.date"  placeholder="D-M-Y" class="col-6" name="date">
+      <br>
+
+      
+      <label for="" class="col-2">Payment Way:</label>
+      <select  [(ngModel)]="invoice.paymentWay" name="paymentWay"  >
+        <option value="cash">cash</option>
+        <option value="credit">credit</option>
+        <option value="insurance credit">insurance credit</option>
+      </select>
+      <br>
+
+      <label for="" class="col-2">Appointment:</label>
+      <input type="number" [(ngModel)]="invoice.appointmentID"  placeholder="Appointment" class="col-6" name="appointmentID">
+      <label for="" class="col-2">Service:</label>
+      <input type="number" [(ngModel)]="invoice.serviceID"  placeholder="Service" class="col-6" name="serviceID">
+      <br>
+
+      <button (click)="addINV()">Add</button>
+    </div>   
+

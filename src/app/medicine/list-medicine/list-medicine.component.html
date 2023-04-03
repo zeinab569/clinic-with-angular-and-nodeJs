@@ -1,0 +1,65 @@
+<main>
+  <div class="head-title">
+    <div class="left">
+      <h1>Medicines</h1>
+      <ul class="breadcrumb">
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li><i class='bx bx-chevron-right' ></i></li>
+        <li>
+          <a class="active"   routerLinkActive="active1" routerLink="/home">Home</a>
+        </li>
+      </ul>
+    </div>
+  
+
+  </div>
+ 
+  <div class="table-data">
+    <div class="order">
+      <div class="head">
+        <h3>All medicines</h3>
+        <i class='bx bx-search' ></i>
+        <i class='bx bx-filter' ></i>
+      </div>
+      <table id="pdf">
+        <thead>
+          <tr>
+
+            <th>Id</th>
+            <th>Name</th>
+            <th>Production Date</th>
+            <th>expiary_Date</th>
+            <th>price</th>
+            <th>Recommendation</th>
+            <th>quantity</th>
+            <th>Update</th>
+            <th>Remove</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of medicines">
+            <td> {{item._id}}</td>
+            <td> {{item.Name}}</td>
+            <td>{{item.production_Date}}</td>
+            <td>{{item.expiary_Date}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.Recommendation}}</td>
+            <td>{{item.quantity}}</td>
+
+            <td> <a routerLink="/medicine/update/{{item._id}}"> <button  class="btn btn-info"><i class="bx bx-edit"></i></button></a></td>
+            <td><button  class="btn btn-danger"   (click)="Delete(item._id)"><i class="bx bx-trash"></i></button></td>
+          </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+ 
+<div id="pdfTable" #pdfTable>
+  <button class="btn btn-primary"
+          (click)="downloadAsPDF()">Export To PDF</button>
