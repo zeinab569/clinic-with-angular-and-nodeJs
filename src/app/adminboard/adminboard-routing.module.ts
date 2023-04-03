@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CreateDoctorComponent } from '../doctorboard/create-doctor/create-doctor.component';
 import { DoctorListComponent } from '../doctorboard/doctor-list/doctor-list.component';
 import { EditComponent } from '../doctorboard/edit/edit.component';
+import { PatientListComponent } from '../patient/patient-list/patient-list.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { CreateserviceComponent } from './createservice/createservice.component';
 import { DashboarComponent } from './dashboar/dashboar.component';
@@ -24,7 +25,8 @@ const routes: Routes = [
     {path:"adddoctor",component:CreateDoctorComponent},
     {path:"addservice",component:CreateserviceComponent},
     {path:"updateservices",component:UpdateserviceComponent},
-    {path:"listservices",component:ListserviceComponent}
+    {path:"listservices",component:ListserviceComponent},
+    {path:"patientlist",component:PatientListComponent}
     
   ]},
 

@@ -14,6 +14,7 @@ import { DoctorboardModule } from '../doctorboard/doctorboard.module';
 import { CreateserviceComponent } from './createservice/createservice.component';
 import { ListserviceComponent } from './listservice/listservice.component';
 import { UpdateserviceComponent } from './updateservice/updateservice.component';
+import { PatientModule } from '../patient/patient.module';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { UpdateserviceComponent } from './updateservice/updateservice.component'
     FormsModule,
     SharedModule,
     HttpClientModule,
-    DoctorboardModule
+    DoctorboardModule,
+    PatientModule
   ],
   exports:[
     CreateEmployeeComponent,

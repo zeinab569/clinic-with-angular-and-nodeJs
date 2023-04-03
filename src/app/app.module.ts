@@ -21,7 +21,7 @@ import { from } from 'rxjs';
 import { AuthInterceptor } from './_helper/auth-interceptor';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SharedModule } from './shared/shared.module';
-import{PatientModule}from'./patient/patient.module'
+import { PatientModule }from'./patient/patient.module';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule} from '@angular/material/sidenav';
@@ -35,10 +35,6 @@ import{PrescrptionModule}from'./prescrption/prescrption.module'
 
 import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
 // import { DoctorboardModule_1 as DoctorboardModule } from "./doctorboard/doctorboard.module";
-
-
-
-
 
 @NgModule({
     declarations: [
@@ -70,13 +66,13 @@ import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
         MatButtonModule,
         MatIconModule,
         AppRoutingModule,
-        MedicalhistoryModule
-        // PatientModule,
-        ,MatDialogModule,
-        // PatientdashboardModule,
+        MedicalhistoryModule,
+        PatientModule,
+        MatDialogModule,
+        PatientdashboardModule,
         PatientRoutingModule,
         PatientDashRoutingModule,
-        // PrescrptionModule,
+        PrescrptionModule,
         PrescrptionRoutingModule,
    
     ]
