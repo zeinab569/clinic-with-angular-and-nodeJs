@@ -34,6 +34,8 @@ import{PatientdashboardModule}from'./patientdashboard/patientdashboard.module';
 import{PrescrptionModule}from'./prescrption/prescrption.module';
 
 import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
+import { AppointmentModule } from './appointment/appointment.module';
+import { InvoiceModule } from './invoice/invoice.module';
 
 // import { DoctorboardModule_1 as DoctorboardModule } from "./doctorboard/doctorboard.module";
 
@@ -76,6 +78,8 @@ import { MedicalhistoryModule } from './medicalhistory/medicalhistory.module';
         PatientDashRoutingModule,
         PrescrptionModule,
         PrescrptionRoutingModule,
+        AppointmentModule,
+        InvoiceModule
     ]
 })
 export class AppModule { }

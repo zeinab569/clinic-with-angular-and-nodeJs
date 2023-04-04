@@ -20,13 +20,21 @@ export class EmployeeService {
   deleteByid(id:number){
     return this.http.delete(this.baseurl+id)
   }
-  edit(std:Employee){
-    return this.http.put(this.baseurl+std._id,std)
+  edit(emp:Employee){
+    return this.http.put(this.baseurl+emp._id,emp)
 
   }
-  add(std:Employee){
-    return this.http.post<Employee>(this.baseurl,std)
+  add(emp:Employee){
+    return this.http.post<Employee>(this.baseurl,emp)
     
   }
+  createemployee(employee:any)
+   {
+     return this.http.post<Employee>(this.baseurl,employee)
+   }
+   getAllEmployees()
+   {
+      return this.http.get<Employee>(this.baseurl);
+   }
   constructor(public http:HttpClient) { }
 }

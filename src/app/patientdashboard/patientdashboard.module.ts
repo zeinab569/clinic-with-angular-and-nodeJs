@@ -4,6 +4,8 @@ import{RouterModule}from '@angular/router';
 import { PatientdashComponent } from './patientdash/patientdash.component';
 import{PatientRoutingModule}from '../patient/patient-routing.module'
 import{PatientDashRoutingModule}from'./patientdash-routing.module'
+import { AppointmentModule } from '../appointment/appointment.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import{PatientDashRoutingModule}from'./patientdash-routing.module'
   imports: [
     CommonModule,
     RouterModule,
-    PatientRoutingModule
+    PatientRoutingModule,
+    AppointmentModule,
+    FormsModule
   ],
   exports:[
     PatientdashComponent,

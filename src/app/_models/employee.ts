@@ -10,11 +10,12 @@ export class Employee {
         public salary:number,
         public gender:string,
         public workHours:number,
-        public employeeImage:string,
+        public employeeImage:any,
         public age:number,
         public clinictId:number,
         public dept_id:number,
-        public address:any
+        public address:any,
+    
         
         ){}
 }

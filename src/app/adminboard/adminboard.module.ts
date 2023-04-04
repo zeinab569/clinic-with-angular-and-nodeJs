@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdminboardRoutingModule } from './adminboard-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { DashboarComponent } from './dashboar/dashboar.component';
 import { MaindashComponent } from './maindash/maindash.component';
@@ -37,7 +37,8 @@ import { PatientModule } from '../patient/patient.module';
     SharedModule,
     HttpClientModule,
     DoctorboardModule,
-    PatientModule
+    PatientModule,
+    ReactiveFormsModule 
   ],
   exports:[
     CreateEmployeeComponent,

@@ -12,11 +12,13 @@
         <th scope="col">Workhours</th>
         <th scope="col">Image</th>
         <th scope="col">Age</th>
+        <th scope="col">Image</th>
         <th scope="col"> Delete</th>
+        <th scope="col">update</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor ="let item of employees">
+      <tr *ngFor ="let item of emps">
         <td>{{item._id}}</td>
         <td>{{item.name}}</td>
         <td>{{item.user_name}}</td>
@@ -26,8 +28,9 @@
         <td>{{item.salary}}</td>
         <td>{{item.gender}}</td>
         <td>{{item.workHours}}</td>
-        <td>{{item.employeeImage}}</td>
+        <!-- <td>{{item.employeeImage}}</td> -->
         <td>{{item.age}}</td>
+        <td><img src={{item.employeeImage}} alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"></td>
         <td>
           <button class="btn btn-outline-danger" (click)="delete(item._id)" ><i class="fa fa-trash-o"></i></button>
        </td>

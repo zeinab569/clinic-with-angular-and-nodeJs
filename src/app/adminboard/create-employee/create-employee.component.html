@@ -1,8 +1,89 @@
 
-<div role="main" >
+<form  [formGroup]="EmployeeForm" (ngSubmit)="onSubmit()" >
+  <div role="main" >
+  
+  <div class="themain">
+    <div class="alert primary">
+      <ul>
+           <div> 
+             <label>TheID</label><input type="text" formControlName="_id"> 
+             <label>Name</label><input type="text" formControlName="name">  
+             <label>userName</label><input type="text" formControlName="user_name">
+           </div>
+          <div>
+            <label>Phone</label> <input type="text"  formControlName="phoneno" >
+            <label>Email</label> <input type="text"  formControlName="email" >
+            <label>Password</label> <input type="text" formControlName="password" >
+          </div>
+          <div>
+            <label>Salary</label> <input type="text"  formControlName="salary" >
+            <label>workHours</label> <input type="text"  formControlName="workHours" >
+            <label>Age</label> <input type="text"  formControlName="age" >
+          </div>
+          <div>
+    
+            <label>role</label>
+            <select formControlName="user_role" name="thes" id="sel">
+             <option>admin</option>
+             <option>receptionist</option>
+             <option >accountant</option>
+             <option >pharmacist</option>
+             </select>
+              
+            
+             <label>Department</label>
+           <select class="form-dropdown"  formControlName="dept_id">
+            <option>Please Select</option>
+            <option [ngValue]="1">Dental</option>
+            <option [ngValue]="2">surgery</option>
+            <option [ngValue]="3">orthopaedics</option>
+            <option [ngValue]="4">psychiatry</option>
+            <option [ngValue]="5">skin</option>
+            <option [ngValue]="6">neurology</option>
+  
+        </select>
+           
+        <label>Gender</label>
+        <select formControlName="gender" name="thes" id="sel">
+         <option>male</option>
+         <option>female</option>
+         </select>
+        
+         
+          <label>  The Clinic</label>
+            <select class="form-dropdown"  formControlName="clinictId">
+              <option>Please Select</option>
+              <option [ngValue]="1">The Minute Medical.</option>
+              <option [ngValue]="2">Treatment Solutions</option>
+              <option [ngValue]="3">Medical Zone</option>
+              <option [ngValue]="4">Union Family Health Center</option>
+              <option [ngValue]="5">First Priority Medical</option>
+          </select>
+          </div>
+    
+      </ul>
+      
+      <div class="mb-4 pb-2">
+        <div>
+          <label class="form-label" >Image</label>
+          <input  
+           type="file"  (input)="fileChanged($event)" 
+           id="form3Examplev4" class="form-control " />
+          
+        </div>
+      </div>
+
+     <button type="submit" class="btn " id="btn"> Save</button>
+    </div>
+  </div>
+  </div> 
+
+</form>
+
+<!-- <div role="main" >
   
   <ul class=" page-section " type="none">
-      <!-- first container for image   class="thef"  -->
+    
           <div class="row">
               
                   <div class="col col-lg-6">
@@ -81,6 +162,6 @@
    <button (click)="save()" class="btn " id="btn"> Save</button>
   </div>
 </div>
-</div>
+</div> -->
 
 

@@ -10,6 +10,9 @@ import Swal from 'sweetalert2';
   styleUrls: ['./listemployee.component.css']
 })
 export class ListemployeeComponent {
+  emps:any;
+  
+  
   employees:Employee[]=[]
   employee:Employee=new Employee(0,"","","","","","",0,"",0,"",0,0,0,"")
   flag=false;
@@ -45,10 +48,23 @@ public  E2:any;
   }
 
   ngOnInit(){
-    this.employeeservices.getAll().subscribe(data=>{
-        console.log(data);
-        this.employees=data;
+  //   this.employeeservices.getAll().subscribe(data=>{
+  //       console.log(data);
+  //       this.employees=data;
         
-    })
+  //   })
+  // }
+
+
+  this.employeeservices.getAllEmployees().subscribe(
+    d=>{
+      this.emps=d
+     this.emps.forEach((emp:Employee) => {
+        // emp.employeeImage=Buffer.from(emp.employeeImage).toString()
+      });
+      console.log(d)
+    }
+  )
+
   }
 }
