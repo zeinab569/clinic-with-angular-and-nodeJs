@@ -28,14 +28,14 @@
                     <label >Last Name</label>
                     <input  value="" [(ngModel)]="mhistory.patientId.lastName" readonly >
                     <label  >Doctor Name</label>
-                    <input value="" [(ngModel)]="mhistory.doctorId.fullName" readonly>
+                    <!-- <input value="" [(ngModel)]="mhistory.doctorId.fullName" readonly> -->
                 </div>
         </li>
         <!-- gender -->
         <li >
             <label class="one"> gender </label>
             <div> 
-                <select [(ngModel)]="mhistory.doctorId.gender" >
+                <select [(ngModel)]="mhistory.patientId.gender" >
                     <option value="female">Female</option>
                     <option value="male">Male</option>
              </select> </div>

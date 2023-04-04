@@ -11,6 +11,8 @@ import { EditComponent } from './edit/edit.component';
 import { MedicalhistoryComponent } from './medicalhistory/medicalhistory.component';
 import { PatientsviewComponent } from './patientsview/patientsview.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PrescriptionUpdateComponent } from '../prescrption/prescription-update/prescription-update.component';
+import { AddPrescriptionComponent } from '../prescrption/add-prescription/add-prescription.component';
 
 const routes: Routes = [
   {path:"", component:DashboardComponent,children:[
@@ -33,7 +35,10 @@ const routes: Routes = [
   {path:"edit", component:EditComponent},
 
   {path:'patientList/historyInfo/:id', component: MedicalhistoryComponent },
-  { path: 'home', component: HomeComponent },
+  {path:'patientList/prescrptionadd/:id', component: AddPrescriptionComponent  },
+  {path:'patientList/prescrptionUpdate/:id', component: PrescriptionUpdateComponent },
+
+  {path: 'home', component: HomeComponent },
   {path:"doctorcard", component:DoctorcardsComponent},
   {path:"doctorBoard", component:DashboardComponent},
   

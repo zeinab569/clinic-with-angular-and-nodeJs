@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     background: red;
     margin: 50px;
+
   }
   .prescription_form {
     width: 100%;

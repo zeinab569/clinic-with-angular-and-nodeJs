@@ -14,6 +14,7 @@ import { MedicalhistoryComponent } from './medicalhistory/medicalhistory.compone
 import { CreatemhComponent } from './createmh/createmh.component';
 import { AdminboardModule } from '../adminboard/adminboard.module';
 import { EditComponent } from './edit/edit.component';
+import { PrescrptionModule } from '../prescrption/prescrption.module';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { EditComponent } from './edit/edit.component';
     RouterModule,
     FormsModule,
     HttpClientModule,
+    PrescrptionModule
     
   ],
   exports:[

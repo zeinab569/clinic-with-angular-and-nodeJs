@@ -10,7 +10,8 @@
                 <h5 class="mb-0">{{prescription.firstName}} {{prescription.lastName}} {{prescription._id}}</h5><span class="small text-uppercase text-muted">{{prescription.age}} years</span>
                 <ul class="social mb-0 list-inline mt-3">
                     <button class="btn btn-outline-success mx-3" [routerLink]="['historyInfo',prescription._id]"  (click)="save(prescription)"> MH</button>
-                    <button class="btn btn-outline-success" [routerLink]="['historyInfo',prescription._id]"  (click)="save(prescription)">Prescription</button>
+                    <!-- <button class="btn btn-outline-success" [routerLink]="['prescrptionadd',prescription._id]"  (click)="save(prescription)">Prescription</button> -->
+                    <button class="btn btn-outline-success" [routerLink]="['prescrptionUpdate',prescription._id]"  (click)="save(prescription)">Prescription</button>
                     <router-outlet></router-outlet>
                 </ul>
               
