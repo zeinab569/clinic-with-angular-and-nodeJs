@@ -14,10 +14,17 @@ export class DoctorListComponent {
   doc: Doctor[]=[];
   flag=false;
   currentDoc:Doctor=new Doctor(0,"","","","","","","",0,0,"",0,0,0,0,0,"","","","","",0);
+ 
   delete(id:Number){
     if(confirm('are you sure?!')){
       this.doctorService.deleteById(id).subscribe(a=>{
         console.log(a);
+        for (let i = 0; i < this.doc.length; i++) {
+          if(id == this.doc[i]._id){
+            this.doc.splice(i,1);
+            break;
+          }
+        }
       });
       Swal.fire({
         position: 'center',

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Employee } from 'src/app/_models/employee';
 import { EmployeeService } from 'src/app/_sevices/employee.service';
 import Swal from 'sweetalert2';
+import { Buffer } from 'buffer/';
 
 @Component({
   selector: 'app-listemployee',
@@ -24,9 +25,9 @@ export class ListemployeeComponent {
     if(confirm("are you sure")){
       this.employeeservices.deleteByid(id).subscribe(a=>{
         console.log(a)
-        for (let i = 0; i < this.employees.length; i++) {
-          if(id == this.employees[i]._id){
-            this.employees.splice(i,1);
+        for (let i = 0; i < this.emps.length; i++) {
+          if(id == this.emps[i]._id){
+            this.emps.splice(i,1);
             break;
           }
         }
@@ -60,7 +61,7 @@ public  E2:any;
     d=>{
       this.emps=d
      this.emps.forEach((emp:Employee) => {
-        // emp.employeeImage=Buffer.from(emp.employeeImage).toString()
+        emp.employeeImage=Buffer.from(emp.employeeImage).toString()
       });
       console.log(d)
     }

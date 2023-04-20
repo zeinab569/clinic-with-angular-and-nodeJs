@@ -1,7 +1,21 @@
-
 <form  [formGroup]="EmployeeForm" (ngSubmit)="onSubmit()" >
   <div role="main" >
-  
+    <ul class=" page-section " type="none">
+    
+      <div class="row">
+          
+              <div class="col col-lg-6">
+                  <h2 id="header_1" class="form-header" data-component="header"> Add Employee</h2>
+              </div>
+              
+              <div class="col col-lg-6">
+                <img src="../../assets/dm.jpg"
+                    alt="New Patient Enrollment"  class="header-logo-right">
+            </div>
+            
+      </div>
+</ul>
+
   <div class="themain">
     <div class="alert primary">
       <ul>
@@ -164,4 +178,199 @@
 </div>
 </div> -->
 
+
+<!-- <div class="table align-middle" style="margin-left: 300px; width: 80%;" >
+  <form  [formGroup]="EmployeeForm" (ngSubmit)="onSubmit()" >
+  <section class="h-90 h-custom gradient-custom-2">
+     
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12">
+            <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-lg-6">
+                    <div class="p-5">
+                      <h1 class="fw-normal mb-5" style="color: #4835d4;">General Infomation</h1>
+                      <div class="row">
+                        <div class="col-md-6 mb-4 pb-2">
+    
+                          <div class="form-outline">
+                              <label class="form-label" for="form3Examplev3"> ID</label>
+                            <input  formControlName="_id"
+                            type="text" id="form3Examplev2" class="form-control " placeholder="ID" />
+                            
+                          </div>
+    
+                        </div>
+                        <div class="col-md-6 mb-4 pb-2">
+    
+                          <div class="form-outline">
+                              <label class="form-label" for="form3Examplev3"> name</label>
+                            <input formControlName="name"
+                             type="text" id="form3Examplev3" class="form-control " placeholder=" name" />
+                          
+                          </div>
+    
+                        </div>
+                      </div>
+                      <div class="mb-4 pb-2">
+                          <div class="form-outline">
+                            <label class="form-label" for="form3Examplev4">user_name</label>
+                            <input formControlName="user_name" 
+                            type="text" id="form3Examplev4" class="form-control " placeholder="username" />
+                            
+                          </div>
+                          </div>
+                          <div class="mb-4 pb-2">
+                              <div class="form-outline">
+                                  <label class="form-label" for="form3Examplev3">Gender</label>
+                                  <select class="form-control " formControlName="gender">
+                                     <option>Male</option>
+                                     <option>Female</option>
+                                  </select>
+                                
+                              </div>
+                              </div>
+
+                        <div class="row">
+
+                          <div class="form-outline">
+                          <label class="form-label" for="form3Examplev3"> age</label>
+                          <input formControlName="age" type="text" id="form3Examplev3" class="form-control " placeholder=" age" />
+                          </div>
+
+                           <div class="form-outline">
+                            <label class="form-label" for="form3Examplev3"> salary</label>
+                            <input formControlName="salary" type="text" id="form3Examplev3" class="form-control " placeholder=" salary" />
+                            </div>
+
+                            <div class="form-outline">
+                              <label class="form-label" for="form3Examplev3"> workHours</label>
+                              <input formControlName="workHours" type="text" id="form3Examplev3" class="form-control " placeholder=" workHours" />
+                              </div>
+                            
+                        </div>
+  
+                        <div class="row">
+                          <div class="col-md-6 mb-4 pb-2">
+      
+                            <div class="form-outline">
+                            <label class="form-label" for="form3Examplev2">password</label>
+                              <input formControlName="password"
+                               type="text" id="form3Examplev2" class="form-control " placeholder="pass " />
+                              
+                            </div>
+      
+                          </div>
+
+                          <div class="col-md-6 mb-4 pb-2">
+      
+                            <div class="form-outline">
+                                <label class="form-label" for="form3Examplev3">clinic id</label>
+                                       <select class="form-control" formControlName="clinictId"  >
+                                       <option [ngValue]="1">The Minute Medical.</option>
+                                       <option [ngValue]="2">Treatment Solutions</option>
+                                       <option [ngValue]="3">Medical Zone</option>
+                                       <option [ngValue]="4">Union Family Health Center</option>
+                                       <option [ngValue]="5">First Priority Medical</option>
+                                          
+                                       </select>
+                            </div>
+      
+                          </div>
+                        </div>
+                      
+                     <div class="row">
+                      <div class="col-md-6 mb-4 pb-2">
+      
+                        <div class="form-outline">
+                            <label class="form-label" for="form3Examplev3">department id</label>
+                                   <select class="form-control" formControlName="dept_id"  >
+                                    <option [ngValue]="1">Dental</option>
+                                    <option [ngValue]="2">surgery</option>
+                                    <option [ngValue]="3">orthopaedics</option>
+                                    <option [ngValue]="4">psychiatry</option>
+                                    <option [ngValue]="5">skin</option>
+                                    <option [ngValue]="6">neurology</option>
+                                      
+                                   </select>
+                        </div>
+  
+                      </div>
+
+                      <div class="col-md-6 mb-4 pb-2">
+    
+                        <div class="form-outline">
+                            <label class="form-label" for="form3Examplev3">role</label>
+                                   <select class="form-control" formControlName="user_role"  >
+                                    <option>admin</option>
+                                    <option>receptionist</option>
+                                    <option >accountant</option>
+                                    <option >pharmacist</option>
+                                      
+                                   </select>
+                        </div>
+  
+                      </div>
+                     </div>
+                        
+
+                      <div class="mb-4 pb-2">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Examplev4">Image</label>
+                          <input  
+                           type="file"  (input)="fileChanged($event)" 
+                           id="form3Examplev4" class="form-control " />
+                          
+                        </div>
+                      </div>
+     
+                    
+    
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="col-lg-6 bg-indigo text-white">
+                    <div class="p-5">
+                      <h1 class="fw-normal mb-5">Contact Details</h1>
+    
+                      
+    
+                      <div class="mb-4 pb-2">
+                        <div class="form-outline form-white">
+                          <label class="form-label" for="form3Examplea6">Phone Number</label>
+                          <input formControlName="phoneno"
+                           type="text" id="form3Examplea6" class="form-control " />
+                          
+                        </div>
+                      </div>
+  
+    
+                      <div class="mb-4">
+                        <div class="form-outline form-white">
+                          <label class="form-label" for="form3Examplea9">Email</label>
+                          <input formControlName="email"
+                           type="text" id="form3Examplea9" class="form-control " />
+                          
+                        </div>
+                      </div>
+    
+                      <button type="submit" class="btn btn-light "
+                        data-mdb-ripple-color="dark">Register</button>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </form> 
+    </div> -->
 

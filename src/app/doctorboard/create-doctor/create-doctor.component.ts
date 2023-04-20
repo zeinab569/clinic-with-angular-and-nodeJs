@@ -20,7 +20,7 @@ export class CreateDoctorComponent {
     
     this.doctorService.add(this.currentDoc).subscribe(data=>{
       console.log(data)
-      this.router.navigateByUrl("/home")
+      this.router.navigateByUrl("/doctor/doctorList")
     })
   }
 

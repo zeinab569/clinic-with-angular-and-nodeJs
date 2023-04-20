@@ -6,6 +6,7 @@ import{PatientRoutingModule}from '../patient/patient-routing.module'
 import{PatientDashRoutingModule}from'./patientdash-routing.module'
 import { AppointmentModule } from '../appointment/appointment.module';
 import { FormsModule } from '@angular/forms';
+import { PatientModule } from '../patient/patient.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     RouterModule,
     PatientRoutingModule,
     AppointmentModule,
-    FormsModule
+    FormsModule,
+    PatientModule
   ],
   exports:[
     PatientdashComponent,

@@ -19,6 +19,8 @@ export class LoginComponent {
     }
     this.sankBar.open("Logging... Please wait ", 'Close');
     this.authService.login(form.value.email,form.value.password);
+   
+    console.log(this.authService.getUserRole)
   };
 
 }

@@ -29,7 +29,7 @@ export class AuthService {
   }
 
   getUserRole(){
-    return this.userRole;
+    return this.userRole.value;
   }
 
   getAuthStatusListener(){
@@ -65,10 +65,17 @@ export class AuthService {
           const now = new Date();
           const expirationDate = new Date(now.getTime() + expiresInDuration * 1000);
           console.log(expirationDate,email);
-
+          //console.log(this.userRole)
           this.saveAuthData(token, expirationDate );
-
-          this.router.navigate(['/home']);
+          if(this.userRole=="admin"){
+            this.router.navigate(['/admin']);
+          }
+         else if(this.userRole=="doctor"){
+          this.router.navigate(['/doctor']);
+         }
+         else if(this.userRole=="patient"){
+          this.router.navigate(['/patientDashboard/:id']);
+         }
           // this.headerUserdetailsComponent.onViewUserEmail(email);
         }
       });
@@ -134,10 +141,11 @@ export class AuthService {
       expirationDate : new Date(expirationDate)
     }
   }
+
   //ok
   getUserDatas(id: string){
     return this.http.get<{_id: string , name: string, email: string, nic: string ,contact: string, password: string, role: string}>
-    ('http://localhost:8080/user/' +id);
+    ('http://localhost:8080/user/'+id);
   }
   
 // update data

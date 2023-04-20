@@ -16,8 +16,6 @@ export class CreateEmployeeComponent  {
   employee:Employee=new Employee(0,"","","","","","",0,"",0,"",0,0,0,"")
   
   constructor(public employeeservice:EmployeeService,public router:Router) { }
-  
-
   save(){
     this.employeeservice.add(this.employee).subscribe(data=>{
       console.log(data)
@@ -32,8 +30,6 @@ export class CreateEmployeeComponent  {
     })
   }
  
-
-
   ngOnInit(): void
    {
     
@@ -44,7 +40,7 @@ export class CreateEmployeeComponent  {
       user_role:new FormControl(''),
       email:new FormControl('',[Validators.email]),
       password:new FormControl('',[Validators.required,Validators.minLength(8),Validators.maxLength(14)]),
-      phoneno:new FormControl('',[Validators.pattern("^(010|011|012|015)+-+\d{8}$")]),
+      phoneno:new FormControl(''),
       salary:new FormControl(''),
       gender:new FormControl(''),
       workHours:new FormControl('',[Validators.required,Validators.min(8)]),
@@ -53,18 +49,18 @@ export class CreateEmployeeComponent  {
       dept_id:new FormControl(''),
       employeeImage:new FormControl(" "),
       
-  
       })
    }
    fileChanged(event:any){
 
     const file =(event.target).files[0];
     this.EmployeeForm.patchValue({
-      img:file
+      employeeImage:file
     });
     console.log(file);
     
     }
+
   onSubmit()
   {
     const formData=new FormData();
@@ -78,17 +74,36 @@ export class CreateEmployeeComponent  {
     formData.append('gender',this.EmployeeForm.value.gender);
     formData.append('workHours',this.EmployeeForm.value.workHours);
     formData.append('age',this.EmployeeForm.value.age);
+    formData.append('phoneno',this.EmployeeForm.value.phoneno);
     formData.append('clinictId',this.EmployeeForm.value.clinictId);
     formData.append('dept_id',this.EmployeeForm.value.dept_id);
     formData.append('employeeImage',this.EmployeeForm.value.employeeImage);
     
-  
-   this.employeeservice.createemployee(formData).subscribe(
-        p=>{
-          this.EmployeeForm.reset()
-        }
-   )
- 
+  if(this.EmployeeForm.valid){
+    this.employeeservice.createemployee(formData).subscribe(
+      p=>{
+        this.EmployeeForm.reset()
+        this.router.navigateByUrl("/admin/listemployees")
+        Swal.fire({
+        
+          position: 'center',
+          icon: 'success',
+          title: 'Added Successfully &#128077;',
+          showConfirmButton: false,
+         timer: 1500
+        })
+
+      }) 
+  }else{
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'please enter valid data!',
+     // footer: '<a href="">Why do I have this issue?</a>'
+    })
+  }
+      //  console.log(this.EmployeeForm.valid)
+        
   }
 
 }
