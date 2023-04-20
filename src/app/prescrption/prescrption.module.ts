@@ -34,7 +34,8 @@ import { AddPrescriptionComponent } from './add-prescription/add-prescription.co
   exports:[
     PateintPrescrptionsComponent,
     PrescriptionDetailsComponent,
-    PrescriptionDeleteComponent
+    PrescriptionDeleteComponent,
+    AddPrescriptionComponent
   ]
 })
 export class PrescrptionModule { }

@@ -22,6 +22,7 @@ import { ListAppointmentComponent } from './appointment/list-appointment/list-ap
 import { InvoiceListComponent } from './invoice/invoice-list/invoice-list.component';
 import { AddInvoiceComponent } from './invoice/add-invoice/add-invoice.component';
 import { DoctorcardsComponent } from './doctorboard/doctorcards/doctorcards.component';
+import { PrescriptionUpdateComponent } from './prescrption/prescription-update/prescription-update.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -35,6 +36,8 @@ const routes: Routes = [
   // {path:"patientList",component:PatientListComponent},
   // {path:"patientCreation",component:CreatepatientComponent},
   {path:"patientPrescrptions/:id",component:PateintPrescrptionsComponent},
+  {path:'prescrptionupdate/:id',component:PrescriptionUpdateComponent},
+
   {path:'prescrptiondetails/:id',component:PrescriptionDetailsComponent},
   {path:"appointmentList",component:ListAppointmentComponent},
   {path:"invoiceList",component:InvoiceListComponent},

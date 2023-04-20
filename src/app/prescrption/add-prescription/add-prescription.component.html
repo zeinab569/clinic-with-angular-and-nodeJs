@@ -1,4 +1,4 @@
-<!-- <div class="wrapper">
+<div class="wrapper">
     <div class="prescription_form">
         <table class="prescription"  border="1"  >
             <tbody>
@@ -12,7 +12,7 @@
                             </div>
                             <div class="credentials"> 
                                 <h4>Doctor Name</h4>
-                                <p>{{presdetails.doctor_id.fullName}}</p>
+                                <p>{{pres.doctor_id.fullName}}</p>
                                 <br />
                                 
                                 <br/>
@@ -20,7 +20,7 @@
                             </div>
                             <div class="credentials">
                                 <h4>Patiet Name</h4>
-                                <p>{{presdetails.patient_id.firstName}}{{presdetails.patient_id.lastName}}</p>
+                                <p>{{pres.patient_id.firstName}}{{pres.patient_id.lastName}}</p>
                                 <br />
                                 
                                 <br/>
@@ -52,13 +52,13 @@
                         <hr />
                         <div class="medicine">
                             <section >
-                                <ul *ngFor="let item of presdetails.medicine ">
+                                <!-- <ul *ngFor="let item of presdetails.medicine ">
                                     <li>Medicine:{{item.id.Name}}</li>
                                     <li>Quantity:-{{item.quantity}}</li>
                                     <li>Period:{{item.period}}</li>
                                     <hr>
-                                </ul>
-                                <ol *ngIf="addFlag" >
+                                </ul> -->
+                                <!-- <ol *ngIf="addFlag" >
                                     <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
                                         <div >
                                             <label>Medicine Name:-</label>
@@ -83,16 +83,19 @@
                                           </div>
                                     </form>
                                     
-                                </ol>
+                                </ol> -->
                             </section>
-                            <button  (click)="addFlag=true"  style="border: none; background-color: white;text-align: left;" data-toggle="tooltip" data-placement="left"
+                            <button   style="border: none; background-color: white;text-align: left;" data-toggle="tooltip" data-placement="left"
                                
                             title="Click anywhere on the blank space to add more.">Click to add...</button>
                         </div>
                     </td>
-                    <td valign="bottom" (click)=" createPrescription()">
-                        <button id="adv_save"  class="btn btn-sm btn-success save">Save</button>
+                    <td valign="bottom" >
+                        <button id="adv_save"  class="btn btn-sm btn-success save">Start</button>
                     </td>
+                </tr>
+                <tr>
+                    <button [routerLink]="['prescrptionupdate',pres._id]"> Get Start</button>
                 </tr>
                
             </tbody>
@@ -100,4 +103,4 @@
         
        
     </div>
-  </div> -->
+  </div>

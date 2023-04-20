@@ -14,7 +14,8 @@ export class DoctorcardsComponent {
   doc1:Doctor[]=[];
 
   ngOnInit(){
-     this.doctorService.getAll().subscribe(data=>{ this.doctors=data; 
+     this.doctorService.getAll().subscribe(data=>{ 
+      this.doctors=data; 
       console.log(data)
       // this.doc1= this.doctors.filter(p=>p.departmentId==8);
       // console.log(this.doc1);
@@ -45,7 +46,7 @@ export class DoctorcardsComponent {
   
 // -------------------Filter with deptId--------------------------//
 filterDoctorWithDept(doctors:Doctor[], deptId:number){
-  return doctors.filter(p=>p.departmentId==deptId);
+  return doctors.filter(p=>p.departmentId?._id==deptId);
   // return doctors.filter(p=>p.departmentId==deptId);
   // return doctors.filter(p=>p.fullName.startsWith("s"));
   // return doctors.filter(p=>p._id<=4);

@@ -6,13 +6,12 @@ export class Doctor {
         ,public email:String
         ,public phoneNumber:String
         ,public gender:String
-        
         ,public password:String
         ,public doctorImage:String
         ,public age:number
         ,public salary:number
         ,public user_role:string
-        ,public departmentId:Number
+        ,public departmentId:any
         ,public max_appoints:number
         ,public doctor_start:number
         ,public doctor_end:number

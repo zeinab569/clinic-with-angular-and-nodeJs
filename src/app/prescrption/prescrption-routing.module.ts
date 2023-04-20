@@ -12,11 +12,11 @@ import { PrescriptionUpdateComponent } from './prescription-update/prescription-
 
 const routes: Routes = [
     {path:'prescrptiondetails/:id',component:PrescriptionDetailsComponent},
-      {path:'prescrptionList',component:ListPrescriptionComponent},
-     {path:'prescrptionupdate/:id',component:PrescriptionUpdateComponent},
-      {path:'prescriptiondelete/:id',component:PrescriptionDeleteComponent},
-      {path:"doctorprescrptions/:id",component:DoctorPrescrptionsComponent},
-      {path:"patientPrescrptions/:id",component:PateintPrescrptionsComponent},
+    {path:'prescrptionList',component:ListPrescriptionComponent},
+    {path:'prescrptionupdate/:id',component:PrescriptionUpdateComponent},
+    {path:'prescriptiondelete/:id',component:PrescriptionDeleteComponent},
+    {path:"doctorprescrptions/:id",component:DoctorPrescrptionsComponent},
+    {path:"patientPrescrptions/:id",component:PateintPrescrptionsComponent},
   
 ];
 
